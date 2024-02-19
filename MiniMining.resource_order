@@ -1,0 +1,24 @@
+{
+  "FolderOrderSettings": [
+    {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
+    {"name":"Objects","order":9,"path":"folders/Objects.yy",},
+    {"name":"managers","order":1,"path":"folders/Objects/managers.yy",},
+    {"name":"worker_bots","order":2,"path":"folders/Objects/worker_bots.yy",},
+    {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
+    {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
+    {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
+    {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"boundries","order":2,"path":"folders/Sprites/boundries.yy",},
+    {"name":"dummy","order":1,"path":"folders/Sprites/dummy.yy",},
+    {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"obj_par_placement","order":2,"path":"objects/obj_par_placement/obj_par_placement.yy",},
+    {"name":"obj_helpers","order":1,"path":"objects/obj_helpers/obj_helpers.yy",},
+    {"name":"obj_carry_bot","order":1,"path":"objects/obj_carry_bot/obj_carry_bot.yy",},
+    {"name":"spr_tile_dummy","order":1,"path":"sprites/spr_tile_dummy/spr_tile_dummy.yy",},
+    {"name":"spr_dummy_2","order":2,"path":"sprites/spr_dummy_2/spr_dummy_2.yy",},
+    {"name":"obj_player","order":3,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"utils","order":1,"path":"scripts/utils/utils.yy",},
+  ],
+}
