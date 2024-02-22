@@ -8,6 +8,6 @@ if mouse_has_item
 }
 
 
-
-
+// Allows user to move around the borderless window
+move_game_window();
 

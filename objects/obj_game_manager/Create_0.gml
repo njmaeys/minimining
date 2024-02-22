@@ -17,3 +17,8 @@ show_border = true;
 scale = 2;
 scale_max = 3;
 scale_min = 1;
+
+mx = 0;
+my = 0;
+posx = 0;
+posy = 0;
