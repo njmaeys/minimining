@@ -18,3 +18,36 @@ if keyboard_check_pressed(ord("M")) {
 
 
 
+if keyboard_check_pressed(ord("D")) {
+	if not obj_game_manager.mouse_has_item {
+		place_item_on_mouse(obj_ore_deposit);
+	}
+}
+
+
+
+
+if keyboard_check_pressed(ord("B")) {
+	obj_game_manager.show_border = !obj_game_manager.show_border;
+	window_set_showborder(obj_game_manager.show_border);
+}
+
+
+
+if keyboard_check_pressed(vk_up) {
+	if obj_game_manager.scale >= obj_game_manager.scale_max {
+		return;
+	}
+    obj_game_manager.scale += 1;
+    window_set_size(800 * obj_game_manager.scale, 320 * obj_game_manager.scale);
+}
+
+if keyboard_check_pressed(vk_down) {
+	if obj_game_manager.scale <= obj_game_manager.scale_min {
+		return;
+	}
+    obj_game_manager.scale -= 1;
+    window_set_size(800 * obj_game_manager.scale, 320 * obj_game_manager.scale);
+}
+
+

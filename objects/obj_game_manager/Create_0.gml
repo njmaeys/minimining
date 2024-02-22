@@ -12,3 +12,8 @@ depths = {
 }
 
 
+// Border
+show_border = true;
+scale = 2;
+scale_max = 3;
+scale_min = 1;

@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "worker_bots",
-    "path": "folders/Objects/worker_bots.yy",
+    "name": "mineables",
+    "path": "folders/Objects/mineables.yy",
   },
   "parentObjectId": {
     "name": "obj_par_placement",
