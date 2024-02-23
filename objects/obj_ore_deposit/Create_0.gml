@@ -18,5 +18,7 @@ hover_x = -1;
 hover_y = -1;
 
 
+// Set what type of material
+resource_type = -1;
 
 

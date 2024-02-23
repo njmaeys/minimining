@@ -41,8 +41,8 @@ function place_item_on_mouse(_obj) {
 		obj_game_manager.depths.placement_hovers,
 		_obj
 	);
-
 }
+
 
 function remove_item_from_mouse() {
 	instance_destroy(obj_game_manager.obj_on_mouse);
@@ -61,21 +61,15 @@ function place_item_on_map() {
 		var _obj_index = obj_game_manager.obj_on_mouse.object_index;
 		
 		
-		instance_destroy(obj_game_manager.obj_on_mouse);
-		obj_game_manager.mouse_has_item = false;
-		obj_game_manager.obj_on_mouse = -1;
-		
-
-		var _temp = instance_create_depth(
-			_place_x,
-			_place_y,
-			obj_game_manager.depths.placement_objs,
-			_obj_index
-		);
-		
+		var _temp = obj_game_manager.obj_on_mouse;
+		_temp.depth = obj_game_manager.depths.placement_objs;
 		_temp.is_placed = true;
 		_temp.placement_x = _place_x;
 		_temp.placement_y = _place_y;
+		
+				
+		obj_game_manager.mouse_has_item = false;
+		obj_game_manager.obj_on_mouse = -1;
 	}
 }
 

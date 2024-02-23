@@ -21,9 +21,11 @@ if keyboard_check_pressed(ord("M")) {
 if keyboard_check_pressed(ord("D")) {
 	if not obj_game_manager.mouse_has_item {
 		place_item_on_mouse(obj_ore_deposit);
+		
+		// This is where I will set the obj resource types any time I need to but with a menu
+		obj_game_manager.obj_on_mouse.resource_type = obj_resources_manager.mining_resource_types.coal;
 	}
 }
-
 
 
 

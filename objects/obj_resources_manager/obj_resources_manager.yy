@@ -1,22 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ore_deposit",
+  "name": "obj_resources_manager",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "mineables",
-    "path": "folders/Objects/mineables.yy",
+    "name": "managers",
+    "path": "folders/Objects/managers.yy",
   },
-  "parentObjectId": {
-    "name": "obj_par_placement",
-    "path": "objects/obj_par_placement/obj_par_placement.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -32,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_dummy_3",
-    "path": "sprites/spr_dummy_3/spr_dummy_3.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

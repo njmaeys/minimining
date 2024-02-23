@@ -22,3 +22,15 @@ mx = 0;
 my = 0;
 posx = 0;
 posy = 0;
+
+
+// Track the overal important things
+main_progression_items = {
+	current_power: obj_resources_manager.min_power,
+	current_coal: 0,
+	current_copper_ore: 0,
+	current_iron_ore: 0,
+	current_copper_bars: 0,
+	current_iron_bars: 0,
+}
+
