@@ -11,7 +11,7 @@ A relaxing idle mining game. Do other things then come back and see how your lit
 | ~~Ensure placement can't overlap~~ | N/A | Done |
 | ~~Resize game window~~ | N/A | Done |
 | ~~Move game window when borderless~~ | N/A | Done |
-| Mine materials | N/A | Not Started |
+| Mine materials | N/A | Started |
 | Collect and move materials | N/A | Not Started |
 | Power creation | N/A | Not Started |
 | Power consumption | N/A | Not Started |
@@ -19,6 +19,7 @@ A relaxing idle mining game. Do other things then come back and see how your lit
 | User interface | N/A | Not Started |
 | Upgrades - mining and collection | N/A | Not Started |
 | Upgrades - power | N/A | Not Started |
+| Rotate placements | N/A | Not Started |
 | ... | ... | ... |
 
 

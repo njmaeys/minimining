@@ -15,18 +15,21 @@ mining_resource_types = {
 		mining_speed: 20,
 		resource_placement_spr: "",
 		resource_drop_spr: "",
+		base_resource_limit: 100,
 	},
 	copper_ore: {
 		name: "copper_ore",
 		mining_speed: 20,
 		resource_placement_spr: "",
 		resource_drop_spr: "",
+		base_resource_limit: 100,
 	},
 	iron_ore: {
 		name: "iron_ore",
 		mining_speed: 20,
 		resource_placement_spr: "",
 		resource_drop_spr: "",
+		base_resource_limit: 100,
 	},
 }
 

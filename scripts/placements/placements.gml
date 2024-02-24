@@ -67,6 +67,25 @@ function place_item_on_map() {
 		_temp.placement_x = _place_x;
 		_temp.placement_y = _place_y;
 		
+		
+		// Spawn the instance of the bot
+		if _temp.spawns_bot {
+			var _center_x = placement_x + _temp.item_spr_w / 2;
+			var _center_y = placement_y + _temp.item_spr_h / 2;
+			
+			var _bot_inst = instance_create_depth(
+				_center_x,
+				_center_y,
+				obj_game_manager.depths.placement_objs,
+				_temp.my_bot.inst_obj_type
+			);
+			
+			show_debug_message($"Bot x: {_bot_inst.x} y: {_bot_inst.y}");
+			show_debug_message($"Mouse x: {mouse_x} y: {mouse_y}")
+			
+			_temp.my_bot.inst = _bot_inst;
+		}
+		
 				
 		obj_game_manager.mouse_has_item = false;
 		obj_game_manager.obj_on_mouse = -1;

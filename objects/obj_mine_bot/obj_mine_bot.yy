@@ -4,8 +4,6 @@
   "name": "obj_mine_bot",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -13,10 +11,7 @@
     "name": "worker_bots",
     "path": "folders/Objects/worker_bots.yy",
   },
-  "parentObjectId": {
-    "name": "obj_par_placement",
-    "path": "objects/obj_par_placement/obj_par_placement.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -33,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dummy_2",
-    "path": "sprites/spr_dummy_2/spr_dummy_2.yy",
+    "name": "spr_dummy_4",
+    "path": "sprites/spr_dummy_4/spr_dummy_4.yy",
   },
   "spriteMaskId": null,
   "visible": true,
