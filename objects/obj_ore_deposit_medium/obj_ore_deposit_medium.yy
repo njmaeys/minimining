@@ -1,18 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_mine_bot",
+  "name": "obj_ore_deposit_medium",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "worker_bots",
-    "path": "folders/Objects/worker_bots.yy",
+    "name": "mineables",
+    "path": "folders/Objects/mineables.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_par_deposit",
+    "path": "objects/obj_par_deposit/obj_par_deposit.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dummy_4",
-    "path": "sprites/spr_dummy_4/spr_dummy_4.yy",
+    "name": "spr_dummy_7",
+    "path": "sprites/spr_dummy_7/spr_dummy_7.yy",
   },
   "spriteMaskId": null,
   "visible": true,

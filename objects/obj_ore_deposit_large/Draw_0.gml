@@ -11,4 +11,9 @@ else {
 }
 
 
-
+// Set the x,y of the minable slots
+if is_placed
+	and mineable_slots == -1
+{
+	set_minable_slots();
+}

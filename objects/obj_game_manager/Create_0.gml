@@ -8,6 +8,7 @@ obj_on_mouse = -1;
 depths = {
 	placement_objs: -10000,
 	placement_hovers: -20000,
+	bots: -30000,
 	meunus: -60000,
 }
 

@@ -22,3 +22,9 @@ hover_y = -1;
 resource_type = -1;
 spawns_bot = false;
 
+
+// Mining spots
+minable_slots_available = num_mining_spots(item_spr_w, item_spr_h);
+minable_row_size = item_spr_w / 32;
+mineable_slots = -1;
+

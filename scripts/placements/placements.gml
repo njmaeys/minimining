@@ -80,9 +80,6 @@ function place_item_on_map() {
 				_temp.my_bot.inst_obj_type
 			);
 			
-			show_debug_message($"Bot x: {_bot_inst.x} y: {_bot_inst.y}");
-			show_debug_message($"Mouse x: {mouse_x} y: {mouse_y}")
-			
 			_temp.my_bot.inst = _bot_inst;
 		}
 		
