@@ -7,6 +7,9 @@
 min_power = 5; // Ensure power is never completely gone. I'm thinking a little mouse on a wheel running situation
 
 
+// Track available bots
+available_mining_bots = [];
+
 
 // Mining resource types
 mining_resource_types = {
@@ -46,6 +49,7 @@ mining_resource_types = {
 		base_resource_limit: 100,
 	},
 }
+
 
 
 

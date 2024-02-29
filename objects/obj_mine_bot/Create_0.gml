@@ -17,5 +17,10 @@ deposit_inst = -1;
 deposit_inst_slot = -1;
 
 
+// Add to the available bots
+array_push(
+	obj_resources_manager.available_mining_bots,
+	self
+);
 
 

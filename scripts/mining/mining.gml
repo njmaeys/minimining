@@ -35,3 +35,31 @@ function set_minable_slots() {
 	}
 }
 
+
+function ore_deposit_find_bot() {
+	var _fill_slot = -1;
+	for (var _i = 0; _i < minable_slots_available; _i += 1) {
+		var _item = mineable_slots[_i];
+		
+		if _item.bot_inst == -1 {
+			_fill_slot = _item;
+			_fill_slot.index = _i;
+			break;
+		}
+	}
+	
+	if _fill_slot != -1 {
+		if array_length(obj_resources_manager.available_mining_bots) > 0 {
+			var _temp_bot = obj_resources_manager.available_mining_bots[0];
+			array_delete(
+				obj_resources_manager.available_mining_bots,
+				0,
+				1
+			);
+		
+			mineable_slots[_fill_slot.index].bot_inst = _temp_bot;
+			_temp_bot.deposit_inst = self;
+			_temp_bot.deposit_inst_slot = _fill_slot.index;
+		}
+	}
+}
