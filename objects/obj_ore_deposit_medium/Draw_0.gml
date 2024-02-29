@@ -4,6 +4,9 @@
 
 if is_placed {
 	draw_self();
+	
+	// Resources available
+	resource_reduction();
 }
 else {
 	can_be_placed = can_be_placed_check();

@@ -3,7 +3,10 @@
 depth = obj_game_manager.depths.bots;
 
 
-// Number of items it can carry before needing to offload
+
+// Track the mining operations
+next_mining_collection = 0;
+mining_speed = 1;
 max_carry = 10;
 current_carry = 0;
 

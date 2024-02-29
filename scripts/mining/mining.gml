@@ -14,9 +14,11 @@ function set_minable_slots() {
 	
 	for (var _i = 0; _i < minable_slots_available; _i += 1)
 	{
-	    if _i == 3
-			or _i == 6
-			or _i == 9
+		if (item_spr_w / 32 == 2 and _i == 2)
+			or (
+				item_spr_w / 32 == 3 
+				and (_i == 3 or _i == 6)
+			)
 		{
 			_x_offset = x + 16;
 			_y_offset += 32;
@@ -59,7 +61,16 @@ function ore_deposit_find_bot() {
 		
 			mineable_slots[_fill_slot.index].bot_inst = _temp_bot;
 			_temp_bot.deposit_inst = self;
-			_temp_bot.deposit_inst_slot = _fill_slot.index;
+			_temp_bot.deposit_inst_slot = _fill_slot;
 		}
 	}
+}
+
+
+function resource_reduction() {
+	draw_text(
+		x-8,
+		y-16,
+		resource_type.base_resource_limit
+	);
 }
