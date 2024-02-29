@@ -3,6 +3,11 @@
 depth = obj_game_manager.depths.bots;
 
 
+// Home location
+home_x = 0;
+home_y = 0;
+return_home = false;
+
 
 // Track the mining operations
 next_mining_collection = 0;
@@ -18,6 +23,8 @@ move_speed = 2;
 // Keep track of where it is going to mine
 deposit_inst = -1;
 deposit_inst_slot = -1;
+drop_off_inst = -1;
+currently_dropping_off = false;
 
 
 // Add to the available bots

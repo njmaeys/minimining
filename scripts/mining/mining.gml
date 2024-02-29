@@ -39,6 +39,11 @@ function set_minable_slots() {
 
 
 function ore_deposit_find_bot() {
+	// If there is nothing left to mine then just return
+	if resource_type.base_resource_limit == 0 {
+		return;
+	}
+	
 	var _fill_slot = -1;
 	for (var _i = 0; _i < minable_slots_available; _i += 1) {
 		var _item = mineable_slots[_i];

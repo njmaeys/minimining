@@ -23,7 +23,7 @@ if keyboard_check_pressed(ord("3")) {
 		place_item_on_mouse(obj_ore_deposit_large);
 		
 		// This is where I will set the obj resource types any time I need to but with a menu
-		obj_game_manager.obj_on_mouse.resource_type = obj_resources_manager.mining_resource_types.coal_large;
+		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.coal_large);
 	}
 }
 if keyboard_check_pressed(ord("2")) {
@@ -31,7 +31,7 @@ if keyboard_check_pressed(ord("2")) {
 		place_item_on_mouse(obj_ore_deposit_medium);
 		
 		// This is where I will set the obj resource types any time I need to but with a menu
-		obj_game_manager.obj_on_mouse.resource_type = obj_resources_manager.mining_resource_types.coal_medium;
+		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.coal_medium);
 	}
 }
 if keyboard_check_pressed(ord("1")) {
@@ -39,7 +39,7 @@ if keyboard_check_pressed(ord("1")) {
 		place_item_on_mouse(obj_ore_deposit_small);
 		
 		// This is where I will set the obj resource types any time I need to but with a menu
-		obj_game_manager.obj_on_mouse.resource_type = obj_resources_manager.mining_resource_types.coal_small;
+		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.coal_small);
 	}
 }
 

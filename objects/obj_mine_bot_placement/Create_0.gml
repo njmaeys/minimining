@@ -24,7 +24,7 @@ spawns_bot = true;
 power_multiplier = 3;
 my_bot = {
 	inst_obj_type: obj_mine_bot,
-	inst: -1, // Set upon placement
+	inst: -1, // Set upon placement which tracks the actual obj in the world
 	level: 1,
 	current_power: 0,
 	max_power: 3600 * power_multiplier, // 1 min * number of min power multiplier allows

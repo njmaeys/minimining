@@ -9,4 +9,3 @@ if obj_game_manager.main_progression_items.current_power <= min_power {
 
 
 
-
