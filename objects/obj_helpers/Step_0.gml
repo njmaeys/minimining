@@ -17,6 +17,13 @@ if keyboard_check_pressed(ord("M")) {
 }
 
 
+if keyboard_check_pressed(ord("S")) {
+	if not obj_game_manager.mouse_has_item {
+		place_item_on_mouse(obj_smelter);
+	}
+}
+
+
 
 if keyboard_check_pressed(ord("3")) {
 	if not obj_game_manager.mouse_has_item {

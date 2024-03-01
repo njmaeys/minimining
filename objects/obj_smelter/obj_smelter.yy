@@ -1,21 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_drop_off",
+  "name": "obj_smelter",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "drop_offs",
-    "path": "folders/Objects/drop_offs.yy",
+    "name": "smelters",
+    "path": "folders/Objects/smelters.yy",
   },
   "parentObjectId": {
-    "name": "obj_par_drop_off",
-    "path": "objects/obj_par_drop_off/obj_par_drop_off.yy",
+    "name": "obj_par_smelter",
+    "path": "objects/obj_par_smelter/obj_par_smelter.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dummy_9",
-    "path": "sprites/spr_dummy_9/spr_dummy_9.yy",
+    "name": "spr_dummy_12",
+    "path": "sprites/spr_dummy_12/spr_dummy_12.yy",
   },
   "spriteMaskId": null,
   "visible": true,

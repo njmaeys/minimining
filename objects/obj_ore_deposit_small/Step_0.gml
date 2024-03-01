@@ -8,5 +8,3 @@ if mineable_slots != -1 {
 	ore_deposit_find_bot();
 }
 
-
-show_debug_message(item_spr);

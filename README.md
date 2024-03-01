@@ -18,6 +18,7 @@ A relaxing idle mining game. Do other things then come back and see how your lit
 | Power consumption | N/A | Not Started |
 | User interface | N/A | Not Started |
 | Purchase of items | N/A | Not Started |
+| Research (Progression?) | N/A | Not Started |
 | Upgrades - mining and collection | N/A | Not Started |
 | Upgrades - power | N/A | Not Started |
 | Rotate placements | N/A | Not Started |
