@@ -79,3 +79,28 @@ function resource_reduction() {
 		resource_type.base_resource_limit
 	);
 }
+
+
+function increase_global_resource() {
+
+	switch (deposit_inst.resource_type.resource_name) {
+		// Coal
+		case "coal_small":
+			obj_game_manager.main_progression_items.current_coal += 1;
+		break;
+			
+		case "coal_medium":
+			obj_game_manager.main_progression_items.current_coal += 1;
+		break;
+			
+		case "coal_large":
+			obj_game_manager.main_progression_items.current_coal += 1;
+		break;
+		
+		// Copper
+		case "copper_ore_small":
+			obj_game_manager.main_progression_items.current_copper_ore += 1;
+		break;
+	}
+}
+

@@ -13,36 +13,36 @@ available_mining_bots = [];
 
 // Mining resource types
 mining_resource_types = {
-	coal_large: {
-		name: "coal_large",
-		mining_speed: 20,
-		resource_placement_spr: "",
-		resource_drop_spr: "",
-		base_resource_limit: 100,
-	},
-	coal_medium: {
-		name: "coal_medium",
-		mining_speed: 20,
-		resource_placement_spr: "",
-		resource_drop_spr: "",
-		base_resource_limit: 50,
-	},
 	coal_small: {
-		name: "coal_small",
+		resource_name: "coal_small",
 		mining_speed: 20,
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 25,
 	},
-	copper_ore: {
-		name: "copper_ore",
+	coal_medium: {
+		resource_name: "coal_medium",
+		mining_speed: 20,
+		resource_placement_spr: "",
+		resource_drop_spr: "",
+		base_resource_limit: 50,
+	},
+	coal_large: {
+		resource_name: "coal_large",
 		mining_speed: 20,
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 100,
 	},
-	iron_ore: {
-		name: "iron_ore",
+	copper_ore_small: {
+		resource_name: "copper_ore_small",
+		mining_speed: 20,
+		resource_placement_spr: "",
+		resource_drop_spr: "",
+		base_resource_limit: 100,
+	},
+	iron_ore_small: {
+		resource_name: "iron_ore_small",
 		mining_speed: 20,
 		resource_placement_spr: "",
 		resource_drop_spr: "",

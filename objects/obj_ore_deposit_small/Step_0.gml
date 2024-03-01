@@ -9,3 +9,4 @@ if mineable_slots != -1 {
 }
 
 
+show_debug_message(item_spr);

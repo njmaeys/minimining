@@ -42,6 +42,16 @@ if keyboard_check_pressed(ord("1")) {
 		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.coal_small);
 	}
 }
+if keyboard_check_pressed(ord("4")) {
+	if not obj_game_manager.mouse_has_item {
+		place_item_on_mouse(obj_ore_deposit_small);
+		
+		// This is where I will set the obj resource types any time I need to but with a menu
+		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.copper_ore_small);
+		obj_game_manager.obj_on_mouse.item_spr = spr_dummy_10;
+		obj_game_manager.obj_on_mouse.sprite_index = spr_dummy_10;
+	}
+}
 
 
 

@@ -66,6 +66,8 @@ else
 				// Offload resources
 				if current_carry > 0 {
 					current_carry -= 1;
+					
+					increase_global_resource();
 				}
 				else {
 					drop_off_inst = -1;

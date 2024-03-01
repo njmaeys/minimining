@@ -27,6 +27,10 @@ drop_off_inst = -1;
 currently_dropping_off = false;
 
 
+// Purchase
+purchase_cost = 100;
+
+
 // Add to the available bots
 array_push(
 	obj_resources_manager.available_mining_bots,

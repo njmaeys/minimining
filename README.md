@@ -12,7 +12,7 @@ A relaxing idle mining game. Do other things then come back and see how your lit
 | ~~Resize game window~~ | N/A | Done |
 | ~~Move game window when borderless~~ | N/A | Done |
 | ~~Mine materials~~ | N/A | Done |
-| Offload materials | N/A | Started |
+| ~~Offload materials~~ | N/A | Done |
 | Mineral smelting | N/A | Not Started |
 | Power creation | N/A | Not Started |
 | Power consumption | N/A | Not Started |
