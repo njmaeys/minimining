@@ -105,13 +105,12 @@ function can_be_placed_check() {
 }
 
 
-function rotate_obj() {
-	if keyboard_check_pressed(ord("R")) {
-		image_angle += 90;
-		show_debug_message($"Rotate: {image_angle}")
+//function rotate_obj() {
+//	if keyboard_check_pressed(ord("R")) {
+//		image_angle += 90;
 		
-		if image_angle >= 360 {
-			image_angle = 0;
-		}
-	}
-}
+//		if image_angle >= 360 {
+//			image_angle = 0;
+//		}
+//	}
+//}

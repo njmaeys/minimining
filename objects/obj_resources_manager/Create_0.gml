@@ -59,7 +59,7 @@ smelting_recipes = {
 	copper_bar: {
 		coal: 5,
 		copper_ore: 10,
-		cook_time: base_cook_time * 30,
+		cook_time: base_cook_time,// * 30,
 	}
 }
 

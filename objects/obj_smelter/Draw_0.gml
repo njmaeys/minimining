@@ -10,16 +10,21 @@ else {
 	draw_placement_hover_indicator();
 }
 
-
 draw_text(
 	x,
 	y,
-	current_resources.coal
+	$"Smelting: {currently_smelting}"
 );
 draw_text(
 	x,
 	y + 16,
+	current_resources.coal
+);
+draw_text(
+	x,
+	y + 24,
 	current_resources.copper_ore
 );
+
 
 

@@ -36,12 +36,11 @@ my_bot = {
 }
 
 // Smelting is set to an ore type
-base_smelt_speed = 1800 // TODO: Set this in a manager and manipulate later
 ore_to_smelt = -1;
-what_to_make = "copper_bar"; // Force as copper for now while I work it out
 smelting_recipe = -1;
 smelting_multiplier = 1; // Incrase this to smelt faster
 currently_smelting = false;
+current_smelt_time = 0;
 current_resources = {
 	coal: 0,
 	copper_ore: 0,
@@ -50,6 +49,7 @@ current_resources = {
 
 
 // TODO: Move this to a step on a function with mouse interactions
+what_to_make = "copper_bar"; // Force as copper for now while I work it out
 switch what_to_make {
 	case "copper_bar":
 		smelting_recipe = copy_struct(obj_resources_manager.smelting_recipes.copper_bar);
