@@ -11,6 +11,15 @@ else {
 }
 
 
-
+draw_text(
+	x,
+	y,
+	current_resources.coal
+);
+draw_text(
+	x,
+	y + 16,
+	current_resources.copper_ore
+);
 
 

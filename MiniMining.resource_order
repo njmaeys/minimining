@@ -6,6 +6,7 @@
     {"name":"drop_offs","order":5,"path":"folders/Objects/drop_offs.yy",},
     {"name":"menus","order":6,"path":"folders/Objects/menus.yy",},
     {"name":"mineables","order":2,"path":"folders/Objects/mineables.yy",},
+    {"name":"smelters","order":8,"path":"folders/Objects/smelters.yy",},
     {"name":"worker_bots","order":1,"path":"folders/Objects/worker_bots.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
@@ -14,7 +15,6 @@
     {"name":"boundries","order":2,"path":"folders/Sprites/boundries.yy",},
     {"name":"dummy","order":1,"path":"folders/Sprites/dummy.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
-    {"name":"smelters","order":8,"path":"folders/Objects/smelters.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_par_placement","order":3,"path":"objects/obj_par_placement/obj_par_placement.yy",},
@@ -30,7 +30,6 @@
     {"name":"obj_helpers","order":1,"path":"objects/obj_helpers/obj_helpers.yy",},
     {"name":"spr_dummy_12","order":11,"path":"sprites/spr_dummy_12/spr_dummy_12.yy",},
     {"name":"obj_par_deposit","order":4,"path":"objects/obj_par_deposit/obj_par_deposit.yy",},
-    {"name":"obj_carry_bot_placement","order":1,"path":"objects/obj_carry_bot_placement/obj_carry_bot_placement.yy",},
     {"name":"spr_dummy_6","order":6,"path":"sprites/spr_dummy_6/spr_dummy_6.yy",},
     {"name":"spr_border_1","order":1,"path":"sprites/spr_border_1/spr_border_1.yy",},
     {"name":"spr_dummy_8","order":8,"path":"sprites/spr_dummy_8/spr_dummy_8.yy",},

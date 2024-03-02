@@ -6,7 +6,8 @@ if not is_placed {
 }
 
 
-
+if smelting_recipe != -1 {
+}
 
 
 

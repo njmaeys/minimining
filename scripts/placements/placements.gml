@@ -83,6 +83,7 @@ function place_item_on_map() {
 			_temp.my_bot.inst = _bot_inst;
 			_bot_inst.home_x = _center_x;
 			_bot_inst.home_y = _center_y;
+			_bot_inst.home_inst = _temp;
 		}
 		
 				

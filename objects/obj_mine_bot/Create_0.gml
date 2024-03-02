@@ -4,6 +4,7 @@ depth = obj_game_manager.depths.bots;
 
 
 // Home location
+home_inst = -1;
 home_x = 0;
 home_y = 0;
 return_home = false;

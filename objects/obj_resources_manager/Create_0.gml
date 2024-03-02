@@ -9,6 +9,7 @@ min_power = 5; // Ensure power is never completely gone. I'm thinking a little m
 
 // Track available bots
 available_mining_bots = [];
+available_carry_bots = [];
 
 
 // Mining resource types
@@ -52,5 +53,14 @@ mining_resource_types = {
 
 
 
+// Smelting recipes
+base_cook_time = 60;
+smelting_recipes = {
+	copper_bar: {
+		coal: 5,
+		copper_ore: 10,
+		cook_time: base_cook_time * 30,
+	}
+}
 
 

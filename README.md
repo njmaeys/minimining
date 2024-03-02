@@ -24,6 +24,13 @@ A relaxing idle mining game. Do other things then come back and see how your lit
 | Rotate placements | N/A | Not Started |
 | ... | ... | ... |
 
+---
+
+## Random Ideas
+
+- Extra layer as a bar driven by profits of the mining
+    - It has the ability to make drinks and upgrade over time
+
 
 ## Developed By
 <p align = "center">

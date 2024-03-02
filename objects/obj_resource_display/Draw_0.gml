@@ -13,6 +13,11 @@ draw_text(
 	_display_y + 16,
 	$"Copper Ore: {obj_game_manager.main_progression_items.current_copper_ore}"
 );
+draw_text(
+	_display_x,
+	_display_y + 32,
+	$"Copper Bars: {obj_game_manager.main_progression_items.current_copper_bars}"
+);
 
 
 
