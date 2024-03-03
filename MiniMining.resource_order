@@ -15,6 +15,7 @@
     {"name":"boundries","order":2,"path":"folders/Sprites/boundries.yy",},
     {"name":"dummy","order":1,"path":"folders/Sprites/dummy.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
+    {"name":"bots","order":3,"path":"folders/Sprites/bots.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_par_placement","order":3,"path":"objects/obj_par_placement/obj_par_placement.yy",},
@@ -23,6 +24,7 @@
     {"name":"obj_smelter","order":1,"path":"objects/obj_smelter/obj_smelter.yy",},
     {"name":"obj_mine_bot","order":2,"path":"objects/obj_mine_bot/obj_mine_bot.yy",},
     {"name":"obj_carry_bot","order":3,"path":"objects/obj_carry_bot/obj_carry_bot.yy",},
+    {"name":"visuals","order":3,"path":"scripts/visuals/visuals.yy",},
     {"name":"obj_ore_deposit_small","order":6,"path":"objects/obj_ore_deposit_small/obj_ore_deposit_small.yy",},
     {"name":"mining","order":2,"path":"scripts/mining/mining.yy",},
     {"name":"spr_dummy_3","order":3,"path":"sprites/spr_dummy_3/spr_dummy_3.yy",},
@@ -34,6 +36,7 @@
     {"name":"spr_border_1","order":1,"path":"sprites/spr_border_1/spr_border_1.yy",},
     {"name":"spr_dummy_8","order":8,"path":"sprites/spr_dummy_8/spr_dummy_8.yy",},
     {"name":"spr_tile_dummy","order":1,"path":"sprites/spr_tile_dummy/spr_tile_dummy.yy",},
+    {"name":"spr_mining_bot","order":1,"path":"sprites/spr_mining_bot/spr_mining_bot.yy",},
     {"name":"spr_dummy_2","order":2,"path":"sprites/spr_dummy_2/spr_dummy_2.yy",},
     {"name":"spr_dummy_4","order":4,"path":"sprites/spr_dummy_4/spr_dummy_4.yy",},
     {"name":"obj_resources_manager","order":3,"path":"objects/obj_resources_manager/obj_resources_manager.yy",},

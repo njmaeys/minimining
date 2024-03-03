@@ -1,4 +1,6 @@
 
+// Set the sprite facing direction
+target_direction();
 
 // If the bot still needs to move to the location then move it
 if deposit_inst != -1
@@ -53,7 +55,7 @@ else
 			
 		if drop_off_inst != -1 {
 			if point_distance(x, y, drop_off_inst.x, drop_off_inst.y) > 1
-			{
+			{	
 			    move_towards_point(
 					drop_off_inst.x,
 					drop_off_inst.y,
@@ -65,9 +67,16 @@ else
 				
 				// Offload resources
 				if current_carry > 0 {
-					current_carry -= 1;
-					
-					increase_global_resource();
+					if current_drop_off_speed < drop_off_speed {
+						current_drop_off_speed += 1;
+					}
+					else {
+						current_carry -= 1;
+						increase_global_resource();
+						
+						// Reset the drop off timer
+						current_drop_off_speed = 0;
+					}
 				}
 				else {
 					drop_off_inst = -1;
@@ -84,6 +93,7 @@ else
 }
 
 if return_home {
+
 	if point_distance(x, y, home_x, home_y) > 1 {
 		move_towards_point(
 			home_x,
@@ -102,4 +112,6 @@ if return_home {
 		);
 	}
 }
+
+
 

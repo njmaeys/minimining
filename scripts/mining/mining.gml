@@ -104,3 +104,48 @@ function increase_global_resource() {
 	}
 }
 
+
+function load_to_carry_bot(_resource_name) {
+	if current_pick_up_and_drop_off_speed < pick_up_and_drop_off_speed {
+		current_pick_up_and_drop_off_speed += 1;
+	}
+	else {
+		current_carry_amount += 1;
+		
+		switch _resource_name {
+			case "coal":
+				obj_game_manager.main_progression_items.current_coal -= 1
+			break;
+			
+			case "copper_ore":
+				obj_game_manager.main_progression_items.current_copper_ore -= 1
+			break;
+		}
+		
+		// Reset drop off speed
+		current_pick_up_and_drop_off_speed = 0;
+	}
+}
+
+
+function offload_from_carry_bot(_resource_name) {
+	if current_pick_up_and_drop_off_speed < pick_up_and_drop_off_speed {
+		current_pick_up_and_drop_off_speed += 1;
+	}
+	else {
+		current_carry_amount -= 1;
+		
+		switch _resource_name {
+			case "coal":
+				home_inst.current_resources.coal += 1
+			break;
+			
+			case "copper_ore":
+				home_inst.current_resources.copper_ore += 1
+			break;
+		}
+		
+		// Reset drop off speed
+		current_pick_up_and_drop_off_speed = 0;
+	}
+}

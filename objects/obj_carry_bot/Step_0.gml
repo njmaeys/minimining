@@ -1,5 +1,8 @@
 /// @description 
 
+// Set the sprite facing direction
+target_direction();
+
 
 if home_inst != -1 
 	and object_get_name(home_inst.object_index) == "obj_smelter"
@@ -65,9 +68,8 @@ if home_inst != -1
 						else {
 							max_carry_amount = base_max_carry_amount;
 						}
-						
-						obj_game_manager.main_progression_items.current_coal -= 1;
-						current_carry_amount += 1;
+
+						load_to_carry_bot("coal");
 					}
 
 				break;
@@ -94,9 +96,8 @@ if home_inst != -1
 						else {
 							max_carry_amount = base_max_carry_amount;
 						}
-						
-						obj_game_manager.main_progression_items.current_copper_ore -= 1;
-						current_carry_amount += 1;
+
+						load_to_carry_bot("copper_ore");
 					}
 
 				break;
@@ -119,8 +120,8 @@ if home_inst != -1
 					else {
 						speed = 0;
 						dropping_off_resources = true;
-						current_carry_amount -= 1;
-						home_inst.current_resources.coal += 1;
+						
+						offload_from_carry_bot("coal");
 						
 						if current_carry_amount == 0 {
 							dropping_off_resources = false;
@@ -140,8 +141,8 @@ if home_inst != -1
 					else {
 						speed = 0;
 						dropping_off_resources = true;
-						current_carry_amount -= 1;
-						home_inst.current_resources.copper_ore += 1;
+
+						offload_from_carry_bot("copper_ore");
 						
 						if current_carry_amount == 0 {
 							dropping_off_resources = false;

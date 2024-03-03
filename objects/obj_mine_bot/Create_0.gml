@@ -18,10 +18,13 @@ current_carry = 0;
 
 
 // Movement
-move_speed = 2;
+prev_x = x;
+move_speed = 1;
 
 
 // Keep track of where it is going to mine
+drop_off_speed = 20; //60; Increase this as needed
+current_drop_off_speed = 0;
 deposit_inst = -1;
 deposit_inst_slot = -1;
 drop_off_inst = -1;

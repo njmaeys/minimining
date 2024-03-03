@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dummy_5",
-    "path": "sprites/spr_dummy_5/spr_dummy_5.yy",
+    "name": "spr_carry_bot",
+    "path": "sprites/spr_carry_bot/spr_carry_bot.yy",
   },
   "spriteMaskId": null,
   "visible": true,
