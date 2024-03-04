@@ -1,7 +1,7 @@
 /// @description 
 
 // Item Spr
-item_spr = spr_dummy_3;
+item_spr = spr_coal_patch_large;
 item_spr_w = sprite_get_width(item_spr);
 item_spr_h = sprite_get_height(item_spr);
 

@@ -4,6 +4,16 @@
 target_direction();
 
 
+if home_inst != -1
+	and home_inst.currently_smelting 
+{
+	image_alpha = 0;
+}
+else {
+	image_alpha = 1;
+}
+
+
 if home_inst != -1 
 	and object_get_name(home_inst.object_index) == "obj_smelter"
 {

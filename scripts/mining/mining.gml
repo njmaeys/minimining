@@ -10,7 +10,7 @@ function set_minable_slots() {
 	mineable_slots = [];
 	
 	var _x_offset = x + 16;
-	var _y_offset = y + 16;
+	var _y_offset = y + 8;
 	
 	for (var _i = 0; _i < minable_slots_available; _i += 1)
 	{

@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dummy_7",
-    "path": "sprites/spr_dummy_7/spr_dummy_7.yy",
+    "name": "spr_coal_patch_medium",
+    "path": "sprites/spr_coal_patch_medium/spr_coal_patch_medium.yy",
   },
   "spriteMaskId": null,
   "visible": true,

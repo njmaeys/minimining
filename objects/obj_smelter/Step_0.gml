@@ -1,6 +1,14 @@
 /// @description 
 
 
+if currently_smelting {
+	image_speed = 1;
+}
+else {
+	image_speed = 0;
+}
+
+
 if not is_placed {
 	place_item_on_map();
 }
