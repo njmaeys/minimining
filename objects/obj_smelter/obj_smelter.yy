@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dummy_12",
-    "path": "sprites/spr_dummy_12/spr_dummy_12.yy",
+    "name": "spr_smetler",
+    "path": "sprites/spr_smetler/spr_smetler.yy",
   },
   "spriteMaskId": null,
   "visible": true,

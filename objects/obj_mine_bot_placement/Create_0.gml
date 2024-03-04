@@ -1,7 +1,7 @@
 /// @description 
 
 // Item Spr
-item_spr = spr_dummy_2;
+item_spr = spr_mining_bot_platform;
 item_spr_w = sprite_get_width(item_spr);
 item_spr_h = sprite_get_height(item_spr);
 

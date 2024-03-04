@@ -1,5 +1,7 @@
 /// @description 
 
+depth = obj_game_manager.depths.bots;
+
 
 // Track where it is going to need to go to and return to
 home_inst = -1;

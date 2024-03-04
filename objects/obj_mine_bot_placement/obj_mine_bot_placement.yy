@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dummy_2",
-    "path": "sprites/spr_dummy_2/spr_dummy_2.yy",
+    "name": "spr_mining_bot_platform",
+    "path": "sprites/spr_mining_bot_platform/spr_mining_bot_platform.yy",
   },
   "spriteMaskId": null,
   "visible": true,
