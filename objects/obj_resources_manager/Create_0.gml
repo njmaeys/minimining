@@ -16,7 +16,7 @@ available_carry_bots = [];
 mining_resource_types = {
 	coal_small: {
 		resource_name: "coal_small",
-		mining_speed: 20,
+		mining_speed: 60,
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 25,
@@ -25,7 +25,7 @@ mining_resource_types = {
 	},
 	coal_medium: {
 		resource_name: "coal_medium",
-		mining_speed: 20,
+		mining_speed: 60,
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 50,
@@ -34,7 +34,7 @@ mining_resource_types = {
 	},
 	coal_large: {
 		resource_name: "coal_large",
-		mining_speed: 20,
+		mining_speed: 60,
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 100,
@@ -43,7 +43,7 @@ mining_resource_types = {
 	},
 	copper_ore_small: {
 		resource_name: "copper_ore_small",
-		mining_speed: 20,
+		mining_speed: 120,
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 100,
@@ -52,7 +52,7 @@ mining_resource_types = {
 	},
 	iron_ore_small: {
 		resource_name: "iron_ore_small",
-		mining_speed: 20,
+		mining_speed: 120,
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 100,

@@ -2,6 +2,17 @@
 // Set the sprite facing direction
 target_direction();
 
+
+// Set the sprite based on what it's doing
+if currently_mining {
+	sprite_index = spr_mining_bot_is_mining;
+}
+else {
+	sprite_index = spr_mining_bot;
+}
+
+
+
 // If the bot still needs to move to the location then move it
 if deposit_inst != -1
 	and point_distance(x, y, deposit_inst_slot.slot_x, deposit_inst_slot.slot_y) > 1
@@ -25,6 +36,8 @@ else
 			and deposit_inst.resource_type.base_resource_limit > 0 // Ensure the node still has resources
 			and drop_off_inst == -1
 		{
+			currently_mining = true;
+			
 			if next_mining_collection < deposit_inst.resource_type.mining_speed {
 				next_mining_collection += mining_speed;
 			}
@@ -45,6 +58,8 @@ else
 		)
 			and drop_off_inst == -1
 		{
+			currently_mining = false;
+			
 			// Find the closest dropoff point
 			drop_off_inst = instance_nearest(
 				x,

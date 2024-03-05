@@ -50,6 +50,7 @@
     {"name":"spr_mining_bot","order":3,"path":"sprites/spr_mining_bot/spr_mining_bot.yy",},
     {"name":"spr_dummy_5","order":5,"path":"sprites/spr_dummy_5/spr_dummy_5.yy",},
     {"name":"utils","order":1,"path":"scripts/utils/utils.yy",},
+    {"name":"spr_mining_bot_is_mining","order":5,"path":"sprites/spr_mining_bot_is_mining/spr_mining_bot_is_mining.yy",},
     {"name":"spr_dummy_10","order":10,"path":"sprites/spr_dummy_10/spr_dummy_10.yy",},
     {"name":"ts_main","order":1,"path":"tilesets/ts_main/ts_main.yy",},
     {"name":"spr_dummy_7","order":7,"path":"sprites/spr_dummy_7/spr_dummy_7.yy",},

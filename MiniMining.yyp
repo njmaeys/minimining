@@ -76,6 +76,7 @@
     {"id":{"name":"spr_dummy_5","path":"sprites/spr_dummy_5/spr_dummy_5.yy",},},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
     {"id":{"name":"utils","path":"scripts/utils/utils.yy",},},
+    {"id":{"name":"spr_mining_bot_is_mining","path":"sprites/spr_mining_bot_is_mining/spr_mining_bot_is_mining.yy",},},
     {"id":{"name":"obj_border_1","path":"objects/obj_border_1/obj_border_1.yy",},},
     {"id":{"name":"spr_dummy_10","path":"sprites/spr_dummy_10/spr_dummy_10.yy",},},
     {"id":{"name":"ts_main","path":"tilesets/ts_main/ts_main.yy",},},

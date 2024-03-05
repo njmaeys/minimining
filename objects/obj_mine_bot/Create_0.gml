@@ -11,6 +11,7 @@ return_home = false;
 
 
 // Track the mining operations
+currently_mining = false;
 next_mining_collection = 0;
 mining_speed = 1;
 max_carry = 10;
