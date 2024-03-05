@@ -48,8 +48,8 @@ if keyboard_check_pressed(ord("4")) {
 		
 		// This is where I will set the obj resource types any time I need to but with a menu
 		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.copper_ore_small);
-		obj_game_manager.obj_on_mouse.item_spr = spr_dummy_10;
-		obj_game_manager.obj_on_mouse.sprite_index = spr_dummy_10;
+		obj_game_manager.obj_on_mouse.item_spr = spr_copper_patch_small;
+		obj_game_manager.obj_on_mouse.sprite_index = spr_copper_patch_small;
 	}
 }
 

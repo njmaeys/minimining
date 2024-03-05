@@ -20,6 +20,8 @@ mining_resource_types = {
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 25,
+		construction_time: 60 * 5, // TODO: Play around with construction and demo times
+		demolition_time: 60 * 2,
 	},
 	coal_medium: {
 		resource_name: "coal_medium",
@@ -27,6 +29,8 @@ mining_resource_types = {
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 50,
+		construction_time: 60 * 5,
+		demolition_time: 60 * 2,
 	},
 	coal_large: {
 		resource_name: "coal_large",
@@ -34,6 +38,8 @@ mining_resource_types = {
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 100,
+		construction_time: 60 * 5,
+		demolition_time: 60 * 2,
 	},
 	copper_ore_small: {
 		resource_name: "copper_ore_small",
@@ -41,6 +47,8 @@ mining_resource_types = {
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 100,
+		construction_time: 60 * 5,
+		demolition_time: 60 * 2,
 	},
 	iron_ore_small: {
 		resource_name: "iron_ore_small",
@@ -48,6 +56,8 @@ mining_resource_types = {
 		resource_placement_spr: "",
 		resource_drop_spr: "",
 		base_resource_limit: 100,
+		construction_time: 60 * 5,
+		demolition_time: 60 * 2,
 	},
 }
 

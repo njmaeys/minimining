@@ -73,11 +73,11 @@ function ore_deposit_find_bot() {
 
 
 function resource_reduction() {
-	draw_text(
-		x-8,
-		y-16,
-		resource_type.base_resource_limit
-	);
+	//draw_text(
+	//	x-8,
+	//	y-16,
+	//	resource_type.base_resource_limit
+	//);
 }
 
 

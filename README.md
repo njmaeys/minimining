@@ -14,9 +14,10 @@ A relaxing idle mining game. Do other things then come back and see how your lit
 | ~~Mine materials~~ | N/A | Done |
 | ~~Offload materials~~ | N/A | Done |
 | ~~Mineral smelting~~ | N/A | Done |
+| Construction bots | N/A | Not Started |
+| User interface | N/A | Not Started |
 | Power creation | N/A | Not Started |
 | Power consumption | N/A | Not Started |
-| User interface | N/A | Not Started |
 | Purchase of items | N/A | Not Started |
 | Research (Progression?) | N/A | Not Started |
 | Upgrades - mining and collection | N/A | Not Started |
@@ -27,6 +28,15 @@ A relaxing idle mining game. Do other things then come back and see how your lit
 ---
 
 ## Random Ideas
+
+- Construction bots
+    - These can create and destroy resource nodes
+    - When a resource node is depleted go "re-create" it if the player has the necessary resources
+        - Define how much of what resource is required to re-create the node (original purchase price?)
+
+- Fully delete a node/building/bot
+    - TNT explosion on it b/c that sounds fun
+    - I don't want the player to be able to move things around without consequences so to "move" something you have to blow it up and start again
 
 - Extra layer as a bar driven by profits of the mining
     - It has the ability to make drinks and upgrade over time
