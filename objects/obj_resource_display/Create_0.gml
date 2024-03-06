@@ -8,7 +8,8 @@ x_offset = 392;
 y_offset = 152;
 
 
-
+// Metadata
+is_open = false;
 
 
 

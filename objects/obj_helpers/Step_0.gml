@@ -10,6 +10,12 @@ if keyboard_check_pressed(ord("M")) {
 }
 
 
+if keyboard_check_pressed(ord("R")) {
+	obj_resource_display.is_open = !obj_resource_display.is_open;
+}
+
+
+
 if keyboard_check_pressed(ord("S")) {
 	if not obj_game_manager.mouse_has_item {
 		place_item_on_mouse(obj_smelter);
