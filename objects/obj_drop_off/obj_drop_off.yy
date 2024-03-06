@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "drop_offs",
-    "path": "folders/Objects/drop_offs.yy",
+    "name": "main_building",
+    "path": "folders/Objects/main_building.yy",
   },
   "parentObjectId": {
     "name": "obj_par_drop_off",
@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dummy_9",
-    "path": "sprites/spr_dummy_9/spr_dummy_9.yy",
+    "name": "spr_drop_off_zones",
+    "path": "sprites/spr_drop_off_zones/spr_drop_off_zones.yy",
   },
   "spriteMaskId": null,
   "visible": true,

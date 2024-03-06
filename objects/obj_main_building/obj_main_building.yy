@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_par_drop_off",
+  "name": "obj_main_building",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_main_building",
+    "path": "sprites/spr_main_building/spr_main_building.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

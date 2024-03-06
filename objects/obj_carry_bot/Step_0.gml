@@ -21,7 +21,10 @@ if home_inst != -1
 	
 	// Track how far from home and from the drop off
 	var _dist_from_home = point_distance(x, y, home_inst.x, home_inst.y)
-	var _dist_from_drop_off = point_distance(x, y, drop_off_inst.x, drop_off_inst.y)
+	
+	var _drop_off_x = drop_off_inst.x + 32;
+	var _drop_off_y = drop_off_inst.y + 32;
+	var _dist_from_drop_off = point_distance(x, y, _drop_off_x, _drop_off_y);
 	
 	// Find out if the machine is ready to smelt
 	if home_inst.currently_smelting == false 
@@ -63,8 +66,8 @@ if home_inst != -1
 					
 					if _dist_from_drop_off > 1 {
 						move_towards_point(
-							drop_off_inst.x,
-							drop_off_inst.y,
+							_drop_off_x,
+							_drop_off_y,
 							move_speed
 						);
 					}
@@ -91,8 +94,8 @@ if home_inst != -1
 					
 					if _dist_from_drop_off > 1 {
 						move_towards_point(
-							drop_off_inst.x,
-							drop_off_inst.y,
+							_drop_off_x,
+							_drop_off_y,
 							move_speed
 						);
 					}

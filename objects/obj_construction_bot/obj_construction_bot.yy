@@ -1,18 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_par_drop_off",
+  "name": "obj_construction_bot",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "main_building",
-    "path": "folders/Objects/main_building.yy",
+    "name": "worker_bots",
+    "path": "folders/Objects/worker_bots.yy",
   },
-  "parentObjectId": {
-    "name": "obj_par_placement",
-    "path": "objects/obj_par_placement/obj_par_placement.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
