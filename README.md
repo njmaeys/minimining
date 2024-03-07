@@ -14,7 +14,7 @@ A relaxing idle mining game. Do other things then come back and see how your lit
 | ~~Mine materials~~ | N/A | Done |
 | ~~Offload materials~~ | N/A | Done |
 | ~~Mineral smelting~~ | N/A | Done |
-| Construction bots | N/A | Not Started |
+| Construction bots | N/A | Started |
 | User interface | N/A | Not Started |
 | Power creation | N/A | Not Started |
 | Power consumption | N/A | Not Started |
