@@ -23,6 +23,11 @@ resource_type = -1;
 spawns_bot = false;
 
 
+// Construction
+needs_to_be_constructed = true;
+current_construction_time = 0;
+
+
 // Mining spots
 minable_slots_available = num_mining_spots(item_spr_w, item_spr_h);
 minable_row_size = item_spr_w / 32;

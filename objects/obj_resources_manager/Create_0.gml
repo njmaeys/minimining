@@ -9,7 +9,7 @@ min_power = 5; // Ensure power is never completely gone. I'm thinking a little m
 
 // Track available bots
 available_mining_bots = [];
-available_carry_bots = [];
+available_construction_bots = [];
 
 
 // Mining resource types
