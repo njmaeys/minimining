@@ -72,6 +72,20 @@ function ore_deposit_find_bot() {
 }
 
 
+function find_construction_bot() {
+	if array_length(obj_resources_manager.available_construction_bots) > 0 {
+		var _temp_bot = obj_resources_manager.available_construction_bots[0];
+		array_delete(
+			obj_resources_manager.available_construction_bots,
+			0,
+			1
+		);
+		
+		_temp_bot.item_to_construct = self;
+	}
+}
+
+
 function resource_reduction() {
 	//draw_text(
 	//	x-8,

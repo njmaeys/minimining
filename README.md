@@ -27,6 +27,10 @@ A relaxing idle mining game. Do other things then come back and see how your lit
 
 ---
 
+## Bugs
+
+- Placing mining resources when a construction bot is mid movement sometimes causes the bot to change and go after the newly placed node
+
 ## Random Ideas
 
 - Construction bots

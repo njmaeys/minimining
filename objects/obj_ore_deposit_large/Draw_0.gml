@@ -5,7 +5,12 @@
 if is_placed {
 	draw_self();
 	
-	resource_reduction();
+	if needs_to_be_constructed {
+		draw_construction_sprite_and_decal();
+	}
+	else {
+		resource_reduction();
+	}
 }
 else {
 	can_be_placed = can_be_placed_check();

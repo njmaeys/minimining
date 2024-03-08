@@ -6,14 +6,7 @@ if is_placed {
 	draw_self();
 	
 	if needs_to_be_constructed {
-		draw_sprite_stretched(
-			spr_mining_spot_needs_construction,
-			0,
-			x,
-			y,
-			item_spr_w,
-			item_spr_h
-		);
+		draw_construction_sprite_and_decal();
 	}
 	else {
 		resource_reduction();

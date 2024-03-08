@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b809a867-00a5-452d-9181-f7e1bae6d5e0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c0c30799-8667-46ae-9d29-473bc88ad94e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ea714d29-61ba-471e-a6fc-a059ce6ffa39","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9606e9b4-8c1c-4f87-ba4a-9b0605e9de74","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": {
     "resourceType": "GMNineSliceData",
@@ -77,7 +77,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b809a867-00a5-452d-9181-f7e1bae6d5e0","path":"sprites/spr_mining_spot_needs_construction/spr_mining_spot_needs_construction.yy",},},},"Disabled":false,"id":"b4a7e338-e5aa-4a31-ab98-ca003a4891dc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c0c30799-8667-46ae-9d29-473bc88ad94e","path":"sprites/spr_mining_spot_needs_construction/spr_mining_spot_needs_construction.yy",},},},"Disabled":false,"id":"440271ab-82dc-41fc-a2d6-79cf65ee1af1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

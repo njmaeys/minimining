@@ -9,6 +9,11 @@ item_spr_h = sprite_get_height(item_spr);
 // Setup
 hover_item_setup();
 
+// Construction
+needs_to_be_constructed = true;
+current_construction_time = 0;
+
+
 // Placements
 is_placed = false;
 can_be_placed = true;

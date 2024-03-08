@@ -37,4 +37,13 @@ function copy_struct(_struct){
     return _new_copy;
 }
 
-
+function draw_construction_sprite_and_decal() {
+	draw_sprite_stretched(
+		spr_mining_spot_needs_construction,
+		0,
+		x,
+		y,
+		item_spr_w,
+		item_spr_h
+	);
+}

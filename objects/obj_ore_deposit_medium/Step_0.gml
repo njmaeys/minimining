@@ -5,7 +5,12 @@ if not is_placed {
 
 
 if mineable_slots != -1 {
-	ore_deposit_find_bot();
+	if needs_to_be_constructed {
+		find_construction_bot();
+	}
+	else {
+		ore_deposit_find_bot();
+	}
 }
 
 
