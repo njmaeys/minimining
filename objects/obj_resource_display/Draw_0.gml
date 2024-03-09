@@ -10,37 +10,74 @@ the number divided by 1000 so 2,300 == 2.3K
 */
 
 if not is_open {
+	mouse_hovering = mouse_hovering_location(
+		_display_x,
+		_display_y,
+		_display_x + 72,
+		_display_y + 25
+	);
+	
 	draw_sprite(
 		spr_menu_resources_full,
 		1,
 		_display_x,
 		_display_y
 	);
+	
+	if mouse_hovering {
+		draw_set_colour(c_yellow);
+		draw_rectangle(
+			_display_x,
+			_display_y,
+			_display_x + 72,
+			_display_y + 25,
+			true
+		);
+		
+		if mouse_check_button_pressed(mb_left) {
+			is_open = !is_open;
+		}
+	}
 }
 else {
+	mouse_hovering = mouse_hovering_location(
+		_display_x,
+		_display_y,
+		_display_x + 73,
+		_display_y + 72
+	);
+	
 	draw_sprite(
 		spr_menu_resources_full,
 		0,
 		_display_x,
 		_display_y
 	);
+	
+	if mouse_hovering {
+		draw_set_colour(c_yellow);
+		draw_rectangle(
+			_display_x,
+			_display_y,
+			_display_x + 72,
+			_display_y + 71,
+			true
+		);
+		
+		if mouse_check_button_pressed(mb_left) {
+			is_open = !is_open;
+		}
+	}
 }
 
 
 var _offset_x = 5;
 var _column_offset = 22;
-var _offset_y_ore = 20;
-var _offset_y_bar = 44;
+var _offset_y_ore = 21;
+var _offset_y_bar = 45;
 
 // COAL
-draw_text_transformed(
-	_display_x + _offset_x,
-	_display_y + 6,
-	"Coal",
-	0.5,
-	0.5,
-	0
-);
+draw_set_color(c_white);
 if is_open {
 	draw_text_transformed(
 		_display_x + _offset_x,
@@ -54,14 +91,6 @@ if is_open {
 
 
 // COPPER
-draw_text_transformed(
-	_display_x + _offset_x + _column_offset,
-	_display_y + 6,
-	"Copp",
-	0.5,
-	0.5,
-	0
-);
 if is_open {
 	draw_text_transformed(
 		_display_x + _offset_x + _column_offset,
@@ -82,14 +111,6 @@ if is_open {
 }
 
 // IRON
-draw_text_transformed(
-	_display_x + _offset_x + _column_offset * 2,
-	_display_y + 6,
-	"Iron",
-	0.5,
-	0.5,
-	0
-);
 if is_open {
 	draw_text_transformed(
 		_display_x + _offset_x + _column_offset * 2,
