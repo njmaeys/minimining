@@ -13,15 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f9303d76-4017-4b8a-933e-cd56f6283320",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"057e94b5-7fcc-4401-8c89-7a36386719f2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a4d423c3-219c-4532-b3c5-ead8d06240ac",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 96,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"35b007ec-5dad-44ce-bdc1-215ac18e0def","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"072cb74a-bf0f-4c7b-9aaf-71ab72e2a582","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -44,7 +43,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 1.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,8 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f9303d76-4017-4b8a-933e-cd56f6283320","path":"sprites/spr_coal_patch_large/spr_coal_patch_large.yy",},},},"Disabled":false,"id":"8ba9b9c8-dedc-4c5c-802d-716f88304bc1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"057e94b5-7fcc-4401-8c89-7a36386719f2","path":"sprites/spr_coal_patch_large/spr_coal_patch_large.yy",},},},"Disabled":false,"id":"a458f5a3-2271-45f8-9d27-0c97cec1d02f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a4d423c3-219c-4532-b3c5-ead8d06240ac","path":"sprites/spr_coal_patch_large/spr_coal_patch_large.yy",},},},"Disabled":false,"id":"bd13e05f-8a8a-4939-bd61-d65897b46fed","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

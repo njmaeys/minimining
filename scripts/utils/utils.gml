@@ -37,13 +37,52 @@ function copy_struct(_struct){
     return _new_copy;
 }
 
-function draw_construction_sprite_and_decal() {
-	draw_sprite_stretched(
-		spr_mining_spot_needs_construction,
+function draw_construction_sprite_and_decal(_size) {
+	var _construction_spr = spr_small_resource_construction;
+	
+	switch _size {
+		case "small":
+			_construction_spr = spr_small_resource_construction;
+		break;
+		
+		case "medium":
+			_construction_spr = spr_medium_resource_construction;
+		break;
+		
+		case "large":
+			_construction_spr = spr_large_resource_construction;
+		break;
+	}
+	
+	draw_sprite(
+		_construction_spr,
 		0,
 		x,
-		y,
-		item_spr_w,
-		item_spr_h
+		y
+	);
+}
+
+function draw_resource_depleted(_size) {
+	var _depleted_spr = spr_small_resource_construction;
+	
+	switch _size {
+		case "small":
+			_depleted_spr = spr_small_resource_depleted;
+		break;
+		
+		case "medium":
+			_depleted_spr = spr_medium_resource_depleted;
+		break;
+		
+		case "large":
+			_depleted_spr = spr_large_resource_depleted;
+		break;
+	}
+	
+	draw_sprite(
+		_depleted_spr,
+		0,
+		x,
+		y
 	);
 }

@@ -6,7 +6,7 @@ if is_placed {
 	draw_self();
 	
 	if needs_to_be_constructed {
-		draw_construction_sprite_and_decal();
+		draw_construction_sprite_and_decal("small");
 	}
 	else {
 		resource_reduction();
@@ -23,4 +23,10 @@ if is_placed
 	and mineable_slots == -1
 {
 	set_minable_slots();
+}
+
+
+// Resources are gone
+if resource_type.base_resource_limit == 0 {
+	draw_resource_depleted("small");
 }

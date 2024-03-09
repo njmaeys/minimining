@@ -32,10 +32,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_coal_patch_large",
-    "path": "sprites/spr_coal_patch_large/spr_coal_patch_large.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

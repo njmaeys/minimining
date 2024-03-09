@@ -23,31 +23,6 @@ if keyboard_check_pressed(ord("S")) {
 }
 
 
-
-if keyboard_check_pressed(ord("3")) {
-	if not obj_game_manager.mouse_has_item {
-		place_item_on_mouse(obj_ore_deposit_large);
-		
-		// This is where I will set the obj resource types any time I need to but with a menu
-		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.coal_large);
-	}
-}
-if keyboard_check_pressed(ord("2")) {
-	if not obj_game_manager.mouse_has_item {
-		place_item_on_mouse(obj_ore_deposit_medium);
-		
-		// This is where I will set the obj resource types any time I need to but with a menu
-		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.coal_medium);
-	}
-}
-if keyboard_check_pressed(ord("1")) {
-	if not obj_game_manager.mouse_has_item {
-		place_item_on_mouse(obj_ore_deposit_small);
-		
-		// This is where I will set the obj resource types any time I need to but with a menu
-		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.coal_small);
-	}
-}
 if keyboard_check_pressed(ord("4")) {
 	if not obj_game_manager.mouse_has_item {
 		place_item_on_mouse(obj_ore_deposit_small);
@@ -58,6 +33,37 @@ if keyboard_check_pressed(ord("4")) {
 		obj_game_manager.obj_on_mouse.sprite_index = spr_copper_patch_small;
 	}
 }
+if keyboard_check_pressed(ord("3")) {
+	if not obj_game_manager.mouse_has_item {
+		place_item_on_mouse(obj_ore_deposit_large);
+		
+		// This is where I will set the obj resource types any time I need to but with a menu
+		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.coal_large);
+		obj_game_manager.obj_on_mouse.item_spr = spr_coal_patch_large;
+		obj_game_manager.obj_on_mouse.sprite_index = spr_coal_patch_large;
+	}
+}
+if keyboard_check_pressed(ord("2")) {
+	if not obj_game_manager.mouse_has_item {
+		place_item_on_mouse(obj_ore_deposit_medium);
+		
+		// This is where I will set the obj resource types any time I need to but with a menu
+		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.coal_medium);
+		obj_game_manager.obj_on_mouse.item_spr = spr_coal_patch_medium;
+		obj_game_manager.obj_on_mouse.sprite_index = spr_coal_patch_medium;
+	}
+}
+if keyboard_check_pressed(ord("1")) {
+	if not obj_game_manager.mouse_has_item {
+		place_item_on_mouse(obj_ore_deposit_small);
+		
+		// This is where I will set the obj resource types any time I need to but with a menu
+		obj_game_manager.obj_on_mouse.resource_type = copy_struct(obj_resources_manager.mining_resource_types.coal_small);
+		obj_game_manager.obj_on_mouse.item_spr = spr_coal_patch_small;
+		obj_game_manager.obj_on_mouse.sprite_index = spr_coal_patch_small;
+	}
+}
+
 
 
 
