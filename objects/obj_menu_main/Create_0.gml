@@ -3,7 +3,7 @@
 depth = obj_game_manager.depths.meunus;
 
 // Mouse
-mouse_hovering = false;
+mouse_hovering_toggle = false;
 
 
 // Sizes
@@ -21,5 +21,21 @@ y_offset = 152;
 is_open = false;
 
 
+// Menus to choose from
+active_menu_slot = -1;
+menus = [
+	{
+		m_name: "bots", 
+	},
+	{
+		m_name: "resources",
+	},
+	{
+		m_name: "buildings",
+	},
+	{
+		m_name: "settings",
+	}
+]
 
 
