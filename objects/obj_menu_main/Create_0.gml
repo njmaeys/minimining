@@ -29,8 +29,9 @@ menus = [
 		m_srp: spr_menu_tab_bots,
 		data: [
 			{
-				d_title: "Mining Bot",
+				d_title: "Mining Bot \n1x2",
 				bot_obj: obj_mine_bot_placement,
+				icon_spr: spr_mining_bot,
 			}
 		],
 	},
@@ -39,28 +40,32 @@ menus = [
 		m_srp: spr_menu_tab_resources,
 		data: [
 			{
-				d_title: "Coal Small",
+				d_title: "Coal Small \n1x1",
 				resource_type: obj_resources_manager.mining_resource_types.coal_small,
 				resource_spr: spr_coal_patch_small,
 				resource_obj: obj_ore_deposit_small,
+				icon_spr: spr_coal_icon,
 			},
 			{
-				d_title: "Coal Medium",
+				d_title: "Coal Medium \n2x2",
 				resource_type: obj_resources_manager.mining_resource_types.coal_medium,
 				resource_spr: spr_coal_patch_medium,
 				resource_obj: obj_ore_deposit_medium,
+				icon_spr: spr_coal_icon,
 			},
 			{
-				d_title: "Coal Large",
+				d_title: "Coal Large \n3x3",
 				resource_type: obj_resources_manager.mining_resource_types.coal_large,
 				resource_spr: spr_coal_patch_large,
 				resource_obj: obj_ore_deposit_large,
+				icon_spr: spr_coal_icon,
 			},
 			{
-				d_title: "Copper Small",
+				d_title: "Copper Small \n1x1",
 				resource_type: obj_resources_manager.mining_resource_types.copper_ore_small,
 				resource_spr: spr_copper_patch_small,
 				resource_obj: obj_ore_deposit_small,
+				icon_spr: spr_copper_icon,
 			},
 		],
 	},
@@ -69,7 +74,7 @@ menus = [
 		m_srp: spr_menu_tab_buildings,
 		data: [
 			{
-				d_title: "Smelter",
+				d_title: "Smelter \n2x2",
 				building_obj: obj_smelter,
 			},
 		],

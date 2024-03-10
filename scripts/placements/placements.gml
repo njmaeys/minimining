@@ -100,11 +100,6 @@ function place_item_on_map() {
 		obj_game_manager.mouse_has_item = false;
 		obj_game_manager.obj_on_mouse = -1;
 		
-			
-		// Open the menu back up
-		if not obj_menu_main.is_open {
-			obj_menu_main.is_open = true;
-		}
 	}
 }
 

@@ -110,8 +110,17 @@ else {
 			0
 		);
 
+		var _question_x = _d_x + 100;
+		var _question_y = _d_y + 8;
+		var _mouse_on_question = mouse_hovering_location(
+			_question_x,
+			_question_y,
+			_question_x + 16,
+			_question_y + 16
+		);
+
 		// Button interactions are going to be different based on the menu
-		menu_button_operations(_menu_data, _i, _mouse_on_button);
+		menu_button_operations(_menu_data, _i, _mouse_on_button, _d_x, _d_y, _mouse_on_question);
 
 		// Make sure this is last
 		_d_y += 40;

@@ -110,7 +110,10 @@ function menu_open_toggle(_display_x, _display_y) {
 }
 
 
-function menu_button_operations(_data, _index, _mouse_on_button) {
+function menu_button_operations(_data, _index, _mouse_on_button, _button_x, _button_y, _mouse_on_question) {
+	var _d = _data.data[_index]
+	var _m_button_w = 96 - 20;
+	var _m_button_h = 32 - 16;
 	
 	switch menus[active_menu_slot].m_name {
 		case "bots":
@@ -118,14 +121,28 @@ function menu_button_operations(_data, _index, _mouse_on_button) {
 			if obj_game_manager.mouse_has_item {
 				break;
 			}
+						
+			// Draw the resource icon
+			draw_sprite(
+				_d.icon_spr,
+				0,
+				_button_x + _m_button_w,
+				_button_y + _m_button_h
+			);
 			
 			if _mouse_on_button 
 				and mouse_check_button_pressed(mb_left)
 			{
-				var _d = _data.data[_index]
-
 				place_item_on_mouse(_d.bot_obj);
 			}
+			
+			// Draw the question
+			draw_sprite(
+				spr_menu_question,
+				_mouse_on_question,
+				_button_x + 100,
+				_button_y + 8
+			);
 		break;
 		
 		case "resources":
@@ -134,20 +151,33 @@ function menu_button_operations(_data, _index, _mouse_on_button) {
 				break;
 			}
 			
-			// TODO: Draw the resource icon
+			// Draw the resource icon
+			draw_sprite(
+				_d.icon_spr,
+				0,
+				_button_x + _m_button_w,
+				_button_y + _m_button_h
+			);
+			
 			// TODO: Draw the cost
 			
 			// Place an item on the mouse
 			if _mouse_on_button 
 				and mouse_check_button_pressed(mb_left)
 			{
-				var _d = _data.data[_index]
-
 				place_item_on_mouse(_d.resource_obj);
 				obj_game_manager.obj_on_mouse.resource_type = copy_struct(_d.resource_type);
 				obj_game_manager.obj_on_mouse.item_spr = _d.resource_spr;
 				obj_game_manager.obj_on_mouse.sprite_index = _d.resource_spr;
 			}
+			
+			// Draw the question
+			draw_sprite(
+				spr_menu_question,
+				_mouse_on_question,
+				_button_x + 100,
+				_button_y + 8
+			);
 		break;
 		
 		case "buildings":
@@ -159,10 +189,16 @@ function menu_button_operations(_data, _index, _mouse_on_button) {
 			if _mouse_on_button 
 				and mouse_check_button_pressed(mb_left)
 			{
-				var _d = _data.data[_index]
-
 				place_item_on_mouse(_d.building_obj);
 			}
+			
+			// Draw the question
+			draw_sprite(
+				spr_menu_question,
+				_mouse_on_question,
+				_button_x + 100,
+				_button_y + 8
+			);
 		break;
 		
 		case "settings":
