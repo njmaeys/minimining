@@ -6,113 +6,10 @@ var _display_y = obj_game_manager.camera_y - y_offset;
 
 
 if not is_open {
-	var _close_x_offset = 8;
-	mouse_hovering_toggle = mouse_hovering_location(
-		_display_x - _close_x_offset,
-		_display_y,
-		_display_x + closed_width,
-		_display_y + height
-	);
-	
-	// Main menu
-	draw_sprite_stretched(
-		spr_menu,
-		0,
-		_display_x - _close_x_offset,
-		_display_y,
-		closed_width,
-		height
-	);
-	
-	if mouse_hovering_toggle {
-		draw_set_colour(c_gray);
-		draw_set_alpha(0.5);
-		draw_rectangle(
-			_display_x - _close_x_offset + 1,
-			_display_y + 2,
-			_display_x + closed_width,
-			_display_y + height - 3,
-			false
-		);
-		draw_set_colour(c_white);
-		draw_set_alpha(1);
-		
-		if mouse_check_button_pressed(mb_left) {
-			is_open = !is_open;
-			if active_menu_slot = -1 {
-				active_menu_slot = 0;
-			}
-		}
-	}
-
-	// Arrow
-	draw_sprite(
-		spr_main_menu_arrow,
-		0,
-		_display_x - _close_x_offset + 3,
-		_display_y + height / 2
-	);
+	menu_closed_toggle(_display_x, _display_y);
 }
 else {
-	mouse_hovering_toggle = mouse_hovering_location(
-		_display_x - open_width,
-		_display_y,
-		_display_x - open_width + 8,
-		_display_y + height
-	);
-	
-	// Main menu
-	draw_sprite_stretched(
-		spr_menu,
-		0,
-		_display_x - open_width,
-		_display_y,
-		open_width + 8,
-		height
-	);
-
-	// Divider line
-	draw_set_alpha(0.3);
-	draw_rectangle(
-		_display_x - open_width + 11,
-		_display_y + 2,
-		_display_x - open_width + 11,
-		_display_y + height - 3,
-		false
-	);
-	draw_set_alpha(1);
-	
-	// TODO: I want to make this a different close thing
-	if mouse_hovering_toggle {
-		draw_set_colour(c_gray);
-		draw_set_alpha(0.5);
-		draw_rectangle(
-			_display_x - open_width + 2,
-			_display_y + 2,
-			_display_x - open_width + 10,
-			_display_y + height - 3,
-			false
-		);
-		draw_set_colour(c_white);
-		draw_set_alpha(1);
-		
-		if mouse_check_button_pressed(mb_left) {
-			is_open = !is_open;
-		}
-	}
-	
-	// Arrow
-	draw_sprite_ext(
-		spr_main_menu_arrow,
-		0,
-		_display_x - open_width + 8,
-		_display_y + height / 2,
-		-1,
-		1,
-		0,
-		c_white,
-		1
-	);
+	menu_open_toggle(_display_x, _display_y);
 	
 	// Tab setup
 	var _tab_x = _display_x - open_width + 18;
@@ -177,6 +74,48 @@ else {
 		_m_details_w,
 		_m_details_h
 	);
+
+	// Menu to display
+	var _menu_data = menus[active_menu_slot];
+	var _d_x = _m_details_x + 8;
+	var _d_y = _m_details_y + 8;
+	var _m_button_w = 96;
+	var _m_button_h = 32;
+	
+	for (var _i = 0; _i < array_length(_menu_data.data); _i += 1) {
+		var _mouse_on_button = mouse_hovering_location(
+			_d_x,
+			_d_y,
+			_d_x + _m_button_w,
+			_d_y + _m_button_h
+		);
+		
+		draw_sprite_stretched(
+			spr_menu,
+			_mouse_on_button,
+			_d_x,
+			_d_y,
+			_m_button_w,
+			_m_button_h
+		);
+		
+		var _t_offset_x = 3;
+		var _t_offset_y = 3;
+		draw_text_transformed(
+			_d_x + _t_offset_x,
+			_d_y + _t_offset_y,
+			_menu_data.data[_i].d_title,
+			0.5,
+			0.5,
+			0
+		);
+
+		// Button interactions are going to be different based on the menu
+		menu_button_operations(_menu_data, _i, _mouse_on_button);
+
+		// Make sure this is last
+		_d_y += 40;
+	}
 }
 
 

@@ -43,6 +43,7 @@
     {"id":{"name":"spr_placement_hover","path":"sprites/spr_placement_hover/spr_placement_hover.yy",},},
     {"id":{"name":"obj_par_placement","path":"objects/obj_par_placement/obj_par_placement.yy",},},
     {"id":{"name":"obj_ore_deposit_medium","path":"objects/obj_ore_deposit_medium/obj_ore_deposit_medium.yy",},},
+    {"id":{"name":"menu_operations","path":"scripts/menu_operations/menu_operations.yy",},},
     {"id":{"name":"obj_menu_main","path":"objects/obj_menu_main/obj_menu_main.yy",},},
     {"id":{"name":"obj_ore_deposit_large","path":"objects/obj_ore_deposit_large/obj_ore_deposit_large.yy",},},
     {"id":{"name":"spr_main_building","path":"sprites/spr_main_building/spr_main_building.yy",},},

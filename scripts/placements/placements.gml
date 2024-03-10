@@ -41,6 +41,11 @@ function place_item_on_mouse(_obj) {
 		obj_game_manager.depths.placement_hovers,
 		_obj
 	);
+	
+	// Close the menu
+	if obj_menu_main.is_open {
+		obj_menu_main.is_open = false;
+	}
 }
 
 
@@ -49,6 +54,11 @@ function remove_item_from_mouse() {
 	
 	obj_game_manager.obj_on_mouse = -1;
 	obj_game_manager.mouse_has_item = false;
+	
+	// Open the menu back up
+	if not obj_menu_main.is_open {
+		obj_menu_main.is_open = true;
+	}
 }
 
 
@@ -89,6 +99,12 @@ function place_item_on_map() {
 				
 		obj_game_manager.mouse_has_item = false;
 		obj_game_manager.obj_on_mouse = -1;
+		
+			
+		// Open the menu back up
+		if not obj_menu_main.is_open {
+			obj_menu_main.is_open = true;
+		}
 	}
 }
 

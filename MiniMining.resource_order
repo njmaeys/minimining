@@ -24,6 +24,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_par_placement","order":3,"path":"objects/obj_par_placement/obj_par_placement.yy",},
     {"name":"obj_ore_deposit_medium","order":5,"path":"objects/obj_ore_deposit_medium/obj_ore_deposit_medium.yy",},
+    {"name":"menu_operations","order":5,"path":"scripts/menu_operations/menu_operations.yy",},
     {"name":"obj_menu_main","order":1,"path":"objects/obj_menu_main/obj_menu_main.yy",},
     {"name":"obj_ore_deposit_large","order":1,"path":"objects/obj_ore_deposit_large/obj_ore_deposit_large.yy",},
     {"name":"spr_main_building","order":1,"path":"sprites/spr_main_building/spr_main_building.yy",},
