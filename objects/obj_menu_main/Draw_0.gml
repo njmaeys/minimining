@@ -121,7 +121,7 @@ else {
 	var _tab_w = 32;
 	var _tab_h = 32;
 
-	for (var _i = array_length(menus)-1; _i >= 0; --_i) {
+	for (var _i = 0; _i < array_length(menus); _i += 1) {
 		var _mouse_on_tab_header = mouse_hovering_location(
 			_tab_x,
 			_tab_y,
@@ -152,6 +152,15 @@ else {
 			active_menu_slot = _i;
 		}
 		
+		// Draw the icon
+		draw_sprite(
+			menus[_i].m_srp,
+			0,
+			_tab_x,
+			_tab_y
+		);
+		
+		// Make sure this happens last
 		_tab_x += _tab_x_offset_size;
 	}
 	

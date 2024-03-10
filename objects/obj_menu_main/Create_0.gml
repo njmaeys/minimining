@@ -25,16 +25,20 @@ is_open = false;
 active_menu_slot = -1;
 menus = [
 	{
-		m_name: "bots", 
+		m_name: "bots",
+		m_srp: spr_menu_tab_bots,
 	},
 	{
 		m_name: "resources",
+		m_srp: spr_menu_tab_resources,
 	},
 	{
 		m_name: "buildings",
+		m_srp: spr_menu_tab_buildings,
 	},
 	{
 		m_name: "settings",
+		m_srp: spr_menu_tab_settings,
 	}
 ]
 
