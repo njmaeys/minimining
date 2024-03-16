@@ -18,6 +18,11 @@ hover_x = -1;
 hover_y = -1;
 
 
+// Mouse
+mouse_hovering = false;
+placement_cooldown = 5; // Damn click thing too fasts
+
+
 
 // Track the placements bot
 spawns_bot = true;
@@ -32,6 +37,7 @@ my_bot = {
 	bot_x: -1,
 	bot_y: -1,
 }
+draw_line_to_bot = false;
 
 
 

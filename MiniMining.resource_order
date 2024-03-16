@@ -22,6 +22,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_interaction_menu_container","order":10,"path":"sprites/spr_interaction_menu_container/spr_interaction_menu_container.yy",},
     {"name":"obj_par_placement","order":3,"path":"objects/obj_par_placement/obj_par_placement.yy",},
     {"name":"obj_ore_deposit_medium","order":5,"path":"objects/obj_ore_deposit_medium/obj_ore_deposit_medium.yy",},
     {"name":"spr_under_construction_cross","order":13,"path":"sprites/spr_under_construction_cross/spr_under_construction_cross.yy",},

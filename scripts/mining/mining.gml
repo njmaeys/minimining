@@ -62,8 +62,6 @@ function ore_deposit_find_bot() {
 			if resource_type.resource_type == _temp_bot.resource_type 
 				or _temp_bot.resource_type == "any" // Allow wild card bassically
 			{
-				show_debug_message($"My resource type: {resource_type.resource_type}");
-				show_debug_message($"Bot resource type: {_temp_bot.resource_type}");
 				array_delete(
 					obj_resources_manager.available_mining_bots,
 					0,

@@ -67,6 +67,14 @@ mining_resource_types = {
 }
 
 
+// Basic resource list for mining
+mining_resource_list = [
+	"any",
+	"coal",
+	"copper",
+	"iron",
+]
+
 
 // Smelting recipes
 base_cook_time = 60;

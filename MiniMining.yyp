@@ -40,6 +40,7 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"spr_interaction_menu_container","path":"sprites/spr_interaction_menu_container/spr_interaction_menu_container.yy",},},
     {"id":{"name":"spr_placement_hover","path":"sprites/spr_placement_hover/spr_placement_hover.yy",},},
     {"id":{"name":"obj_par_placement","path":"objects/obj_par_placement/obj_par_placement.yy",},},
     {"id":{"name":"obj_ore_deposit_medium","path":"objects/obj_ore_deposit_medium/obj_ore_deposit_medium.yy",},},
