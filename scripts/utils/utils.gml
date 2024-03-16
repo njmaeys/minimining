@@ -60,6 +60,14 @@ function draw_construction_sprite_and_decal(_size) {
 		x,
 		y
 	);
+	
+	// Draw the construction cross
+	draw_sprite(
+		spr_under_construction_cross,
+		1,
+		x + item_spr_w / 2,
+		y + item_spr_h / 2
+	);
 }
 
 function draw_resource_depleted(_size) {

@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dummy_4",
-    "path": "sprites/spr_dummy_4/spr_dummy_4.yy",
+    "name": "spr_construction_bot",
+    "path": "sprites/spr_construction_bot/spr_construction_bot.yy",
   },
   "spriteMaskId": null,
   "visible": true,

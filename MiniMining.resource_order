@@ -24,6 +24,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_par_placement","order":3,"path":"objects/obj_par_placement/obj_par_placement.yy",},
     {"name":"obj_ore_deposit_medium","order":5,"path":"objects/obj_ore_deposit_medium/obj_ore_deposit_medium.yy",},
+    {"name":"spr_under_construction_cross","order":13,"path":"sprites/spr_under_construction_cross/spr_under_construction_cross.yy",},
     {"name":"menu_operations","order":5,"path":"scripts/menu_operations/menu_operations.yy",},
     {"name":"obj_menu_main","order":1,"path":"objects/obj_menu_main/obj_menu_main.yy",},
     {"name":"obj_ore_deposit_large","order":1,"path":"objects/obj_ore_deposit_large/obj_ore_deposit_large.yy",},
@@ -40,6 +41,7 @@
     {"name":"mining","order":2,"path":"scripts/mining/mining.yy",},
     {"name":"spr_dummy_3","order":3,"path":"sprites/spr_dummy_3/spr_dummy_3.yy",},
     {"name":"spr_dummy_9","order":9,"path":"sprites/spr_dummy_9/spr_dummy_9.yy",},
+    {"name":"spr_construction_bot","order":6,"path":"sprites/spr_construction_bot/spr_construction_bot.yy",},
     {"name":"obj_helpers","order":1,"path":"objects/obj_helpers/obj_helpers.yy",},
     {"name":"spr_menu_question","order":9,"path":"sprites/spr_menu_question/spr_menu_question.yy",},
     {"name":"spr_menu_tab_resources","order":6,"path":"sprites/spr_menu_tab_resources/spr_menu_tab_resources.yy",},

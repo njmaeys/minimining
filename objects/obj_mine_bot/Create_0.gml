@@ -32,6 +32,10 @@ drop_off_inst = -1;
 currently_dropping_off = false;
 
 
+// Currently mining resource
+resource_type = "any";
+
+
 // Purchase
 purchase_cost = 100;
 

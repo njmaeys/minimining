@@ -1,0 +1,30 @@
+Mini Mining Next steps
+
+Iron ore
+Set mining priority by mining bot
+	- Pause mining
+	- Draw subble line to bot
+	- Pop up menu to interact with
+Set smelting priority by smelter
+	- Pause smelter
+	- Pop up menu to interact with
+Iron smelting
+Purchase items
+	- Miner
+		- Start with one?
+		- 2 copper bars 10 coal?
+	- Smelter
+		- 100 coal 50 copper ore
+	- Deposits
+		- Coal S: 10 coal | M: 40 coal | L: 90 coal???
+		- Copper S: 25 coal | M: 25 coal 5 copper bar | L: ...???
+		- Iron S: 25 coal 5 copper bar | M: | L:
+Progression
+	- Start with Copper and Coal unlocked
+		- ONLY small resources tho
+	- Iron has to be unlocked with ???
+		- IDEAS
+			- Smelt 50 copper bars?
+			- Unlock with a "cost"
+				- 250 coal and 
+

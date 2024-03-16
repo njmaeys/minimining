@@ -14,15 +14,7 @@ A relaxing idle mining game. Do other things then come back and see how your lit
 | ~~Mine materials~~ | N/A | Done |
 | ~~Offload materials~~ | N/A | Done |
 | ~~Mineral smelting~~ | N/A | Done |
-| Construction bots | N/A | Started |
-| User interface | N/A | Not Started |
-| Power creation | N/A | Not Started |
-| Power consumption | N/A | Not Started |
-| Purchase of items | N/A | Not Started |
-| Research (Progression?) | N/A | Not Started |
-| Upgrades - mining and collection | N/A | Not Started |
-| Upgrades - power | N/A | Not Started |
-| Rotate placements | N/A | Not Started |
+... I got lazy, see the `Mini Mining Next Steps` doc..
 | ... | ... | ... |
 
 ---
