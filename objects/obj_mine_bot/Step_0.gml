@@ -14,7 +14,6 @@ else {
 
 
 // If the bot still needs to move to the location then move it
-
 if deposit_inst != -1
 	and point_distance(x, y, deposit_inst_slot.slot_x, deposit_inst_slot.slot_y) > 1
 	and drop_off_inst == -1
@@ -111,8 +110,64 @@ else
 	}
 }
 
-if return_home {
+if swap_resource_type {
+	currently_mining = false;
+			
+	// Find the closest dropoff point
+	if drop_off_inst == -1 {
+		drop_off_inst = instance_nearest(
+			x,
+			y,
+			obj_par_drop_off
+		);
+	}
+	
+	var _drop_off_inst_x = drop_off_inst.x + 32;
+	var _drop_off_inst_y = drop_off_inst.y + 32;
+			
+	if point_distance(x, y, _drop_off_inst_x, _drop_off_inst_y) > 1
+		and current_carry > 0
+	{	
+		move_towards_point(
+			_drop_off_inst_x,
+			_drop_off_inst_y,
+			move_speed
+		);
+	}
+	else {
+		speed = 0;
+				
+		// Offload resources
+		if current_carry > 0 {
+			if current_drop_off_speed < drop_off_speed {
+				current_drop_off_speed += 1;
+			}
+			else {
+				current_carry -= 1;
+				increase_global_resource();
+						
+				// Reset the drop off timer
+				current_drop_off_speed = 0;
+			}
+		}
+		else {
+			// Reset the mining slot of the mining slot
+			if deposit_inst != -1 {
+				deposit_inst.mineable_slots[deposit_inst_slot.index].bot_inst = -1;
+			}
+			
+			swap_resource_type = false;
+			drop_off_inst = -1;
+			deposit_inst = -1;
+			deposit_inst_slot = -1;
+			if point_distance(x, y, home_x, home_y) > 1 {
+				return_home = true;
+			}
+		}
+	}
+}
 
+if return_home {
 	if point_distance(x, y, home_x, home_y) > 1 {
 		move_towards_point(
 			home_x,
@@ -131,6 +186,4 @@ if return_home {
 		);
 	}
 }
-
-
 

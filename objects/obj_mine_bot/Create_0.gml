@@ -33,6 +33,7 @@ currently_dropping_off = false;
 
 
 // Currently mining resource
+swap_resource_type = false;
 resource_type = "any";
 
 

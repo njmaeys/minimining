@@ -55,22 +55,29 @@ function ore_deposit_find_bot() {
 		}
 	}
 	
+	//show_debug_message($"Dep ID: {id} | Fill slot: {_fill_slot} | Num bots: {array_length(obj_resources_manager.available_mining_bots)}");
+	
+	
 	if _fill_slot != -1 {
 		if array_length(obj_resources_manager.available_mining_bots) > 0 {
-			var _temp_bot = obj_resources_manager.available_mining_bots[0];
-			
-			if resource_type.resource_type == _temp_bot.resource_type 
-				or _temp_bot.resource_type == "any" // Allow wild card bassically
-			{
-				array_delete(
-					obj_resources_manager.available_mining_bots,
-					0,
-					1
-				);
+			for (var _i = 0; _i < array_length(obj_resources_manager.available_mining_bots); _i += 1) {
+				var _temp_bot = obj_resources_manager.available_mining_bots[_i];
 		
-				mineable_slots[_fill_slot.index].bot_inst = _temp_bot;
-				_temp_bot.deposit_inst = self;
-				_temp_bot.deposit_inst_slot = _fill_slot;
+				if resource_type.resource_type == _temp_bot.resource_type 
+					or _temp_bot.resource_type == "any" // Allow wild card bassically
+				{	
+					array_delete(
+						obj_resources_manager.available_mining_bots,
+						_i,
+						1
+					);
+		
+					mineable_slots[_fill_slot.index].bot_inst = _temp_bot;
+					_temp_bot.deposit_inst = self;
+					_temp_bot.deposit_inst_slot = _fill_slot;
+					
+					break;
+				}
 			}
 		}
 	}

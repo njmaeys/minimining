@@ -55,6 +55,7 @@
     {"id":{"name":"obj_carry_bot","path":"objects/obj_carry_bot/obj_carry_bot.yy",},},
     {"id":{"name":"spr_iron_icon","path":"sprites/spr_iron_icon/spr_iron_icon.yy",},},
     {"id":{"name":"visuals","path":"scripts/visuals/visuals.yy",},},
+    {"id":{"name":"spr_icon_any","path":"sprites/spr_icon_any/spr_icon_any.yy",},},
     {"id":{"name":"obj_ore_deposit_small","path":"objects/obj_ore_deposit_small/obj_ore_deposit_small.yy",},},
     {"id":{"name":"spr_small_resource_depleted","path":"sprites/spr_small_resource_depleted/spr_small_resource_depleted.yy",},},
     {"id":{"name":"ts_1","path":"tilesets/ts_1/ts_1.yy",},},
