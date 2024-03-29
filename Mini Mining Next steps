@@ -1,14 +1,10 @@
 Mini Mining Next steps
 
 Iron ore
-Set mining priority by mining bot
-	- Pause mining
-	- Draw subble line to bot
-	- Pop up menu to interact with
+Iron smelting
 Set smelting priority by smelter
 	- Pause smelter
 	- Pop up menu to interact with
-Iron smelting
 Purchase items
 	- Miner
 		- Start with one?
@@ -20,11 +16,17 @@ Purchase items
 		- Copper S: 25 coal | M: 25 coal 5 copper bar | L: ...???
 		- Iron S: 25 coal 5 copper bar | M: | L:
 Progression
+	- I should create a draw.io doc for this and map out what I would want it to be
 	- Start with Copper and Coal unlocked
 		- ONLY small resources tho
+		- Maybe start with only coal unlocked and copper deposit takes 100 coal mined (maybe)
 	- Iron has to be unlocked with ???
 		- IDEAS
+			- Research?...
+				- Would I do research takes x amount of resources and is done with the main building?
+					- So to get copper unlocked you have to research use x amount of coal ore then it takes x amount of time to finish
+						- There should be rewards like you get x, y, z from it
 			- Smelt 50 copper bars?
 			- Unlock with a "cost"
-				- 250 coal and 
+				- 250 coal and ...
 

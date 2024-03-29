@@ -67,6 +67,7 @@
     {"id":{"name":"obj_helpers","path":"objects/obj_helpers/obj_helpers.yy",},},
     {"id":{"name":"spr_menu_question","path":"sprites/spr_menu_question/spr_menu_question.yy",},},
     {"id":{"name":"spr_menu_tab_resources","path":"sprites/spr_menu_tab_resources/spr_menu_tab_resources.yy",},},
+    {"id":{"name":"obj_mining_priority_menu","path":"objects/obj_mining_priority_menu/obj_mining_priority_menu.yy",},},
     {"id":{"name":"obj_par_smelter","path":"objects/obj_par_smelter/obj_par_smelter.yy",},},
     {"id":{"name":"spr_menu_tab_buildings","path":"sprites/spr_menu_tab_buildings/spr_menu_tab_buildings.yy",},},
     {"id":{"name":"spr_dummy_12","path":"sprites/spr_dummy_12/spr_dummy_12.yy",},},

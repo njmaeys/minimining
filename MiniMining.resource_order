@@ -47,6 +47,7 @@
     {"name":"obj_helpers","order":1,"path":"objects/obj_helpers/obj_helpers.yy",},
     {"name":"spr_menu_question","order":9,"path":"sprites/spr_menu_question/spr_menu_question.yy",},
     {"name":"spr_menu_tab_resources","order":6,"path":"sprites/spr_menu_tab_resources/spr_menu_tab_resources.yy",},
+    {"name":"obj_mining_priority_menu","order":2,"path":"objects/obj_mining_priority_menu/obj_mining_priority_menu.yy",},
     {"name":"spr_menu_tab_buildings","order":8,"path":"sprites/spr_menu_tab_buildings/spr_menu_tab_buildings.yy",},
     {"name":"spr_dummy_12","order":11,"path":"sprites/spr_dummy_12/spr_dummy_12.yy",},
     {"name":"spr_menu","order":2,"path":"sprites/spr_menu/spr_menu.yy",},

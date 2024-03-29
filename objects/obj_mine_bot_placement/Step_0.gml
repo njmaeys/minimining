@@ -9,9 +9,6 @@ if placement_cooldown > 0
 	placement_cooldown -= 1;
 }
 
-if mouse_hovering
-
-
 if not is_placed {
 	place_item_on_map();
 }

@@ -12,13 +12,14 @@ else {
 }
 
 
-
 // If the bot still needs to move to the location then move it
 if deposit_inst != -1
 	and point_distance(x, y, deposit_inst_slot.slot_x, deposit_inst_slot.slot_y) > 1
 	and drop_off_inst == -1
 {
-    move_towards_point(
+	show_debug_message($"Move towards: {deposit_inst_slot.slot_x}, {deposit_inst_slot.slot_y} - {point_distance(x, y, deposit_inst_slot.slot_x, deposit_inst_slot.slot_y)}");
+	show_debug_message($"Moving - Swap: {swap_resource_type} | Go home: {return_home} | ");
+	move_towards_point(
 		deposit_inst_slot.slot_x,
 		deposit_inst_slot.slot_y,
 		move_speed
@@ -28,7 +29,7 @@ else
 { 
 	// Ensure it stops at the resource node
 	speed = 0; 
-	
+
 	if deposit_inst != -1 
 	{
 		// Mine some resources
@@ -112,6 +113,11 @@ else
 
 if swap_resource_type {
 	currently_mining = false;
+	
+	// Reset the mining slot of the mining slot
+	if deposit_inst != -1 {
+		deposit_inst.mineable_slots[deposit_inst_slot.index].bot_inst = -1;
+	}
 			
 	// Find the closest dropoff point
 	if drop_off_inst == -1 {
@@ -124,7 +130,7 @@ if swap_resource_type {
 	
 	var _drop_off_inst_x = drop_off_inst.x + 32;
 	var _drop_off_inst_y = drop_off_inst.y + 32;
-			
+	
 	if point_distance(x, y, _drop_off_inst_x, _drop_off_inst_y) > 1
 		and current_carry > 0
 	{	
@@ -151,15 +157,8 @@ if swap_resource_type {
 			}
 		}
 		else {
-			// Reset the mining slot of the mining slot
-			if deposit_inst != -1 {
-				deposit_inst.mineable_slots[deposit_inst_slot.index].bot_inst = -1;
-			}
-			
 			swap_resource_type = false;
-			drop_off_inst = -1;
-			deposit_inst = -1;
-			deposit_inst_slot = -1;
+			
 			if point_distance(x, y, home_x, home_y) > 1 {
 				return_home = true;
 			}
@@ -180,6 +179,12 @@ if return_home {
 		
 		// Put into the available bots
 		return_home = false;
+		
+		deposit_inst = -1;
+		deposit_inst_slot = -1;
+		drop_off_inst = -1;
+		swap_resource_type = false;
+		
 		array_push(
 			obj_resources_manager.available_mining_bots,
 			self
