@@ -44,3 +44,31 @@ main_progression_items = {
 	current_iron_bars: 0,
 }
 
+
+// What has been unlocked
+research_time_multiplier = 60; // Make life easier to unlock in minutes
+progressions = {
+	coal: {
+		unlocked: true,
+		research_time: 0,
+		research_progress: 0,
+		cost: {},
+	},
+	copper_ore: {
+		unlocked: false,
+		research_time: 2 * research_time_multiplier,
+		research_progress: 0,
+		cost: {
+			coal: 25,
+		},
+	},
+	copper_bar: {
+		unlocked: false,
+		research_time: 2 * research_time_multiplier,
+		research_progress: 0,
+		cost: {
+			coal: 50,
+			copper_ore: 25,
+		},
+	},
+}

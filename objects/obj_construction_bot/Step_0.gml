@@ -1,5 +1,7 @@
 /// @description 
 
+// Set the sprite facing direction
+target_direction();
 
 // Go construct the thing
 if item_to_construct != -1

@@ -12,6 +12,7 @@ array_push(
 
 // Thing to construct
 move_speed = 1;
+prev_x = x;
 item_to_construct = -1;
 
 

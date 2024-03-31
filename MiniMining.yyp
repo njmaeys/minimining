@@ -117,6 +117,7 @@
     {"id":{"name":"spr_tile_set","path":"sprites/spr_tile_set/spr_tile_set.yy",},},
     {"id":{"name":"spr_dummy_1","path":"sprites/spr_dummy_1/spr_dummy_1.yy",},},
     {"id":{"name":"spr_medium_resource_construction","path":"sprites/spr_medium_resource_construction/spr_medium_resource_construction.yy",},},
+    {"id":{"name":"resource_management","path":"scripts/resource_management/resource_management.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
   ],
   "RoomOrderNodes": [

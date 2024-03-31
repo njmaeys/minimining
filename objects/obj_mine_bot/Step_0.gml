@@ -3,6 +3,10 @@
 target_direction();
 
 
+// Track if it's already at home
+var _at_home = point_distance(x, y, home_x, home_y) < 1;
+
+
 // Set the sprite based on what it's doing
 if currently_mining {
 	sprite_index = spr_mining_bot_is_mining;
@@ -17,8 +21,6 @@ if deposit_inst != -1
 	and point_distance(x, y, deposit_inst_slot.slot_x, deposit_inst_slot.slot_y) > 1
 	and drop_off_inst == -1
 {
-	show_debug_message($"Move towards: {deposit_inst_slot.slot_x}, {deposit_inst_slot.slot_y} - {point_distance(x, y, deposit_inst_slot.slot_x, deposit_inst_slot.slot_y)}");
-	show_debug_message($"Moving - Swap: {swap_resource_type} | Go home: {return_home} | ");
 	move_towards_point(
 		deposit_inst_slot.slot_x,
 		deposit_inst_slot.slot_y,
@@ -115,7 +117,9 @@ if swap_resource_type {
 	currently_mining = false;
 	
 	// Reset the mining slot of the mining slot
-	if deposit_inst != -1 {
+	if deposit_inst != -1 
+		and not _at_home
+	{
 		deposit_inst.mineable_slots[deposit_inst_slot.index].bot_inst = -1;
 	}
 			

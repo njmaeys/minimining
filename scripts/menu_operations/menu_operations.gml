@@ -112,6 +112,8 @@ function menu_open_toggle(_display_x, _display_y) {
 
 function menu_button_operations(_data, _index, _mouse_on_button, _button_x, _button_y, _mouse_on_question) {
 	var _d = _data.data[_index]
+	var _b_w = 96;
+	var _b_h = 32;
 	var _m_button_w = 96 - 20;
 	var _m_button_h = 32 - 16;
 	
@@ -160,9 +162,31 @@ function menu_button_operations(_data, _index, _mouse_on_button, _button_x, _but
 			);
 			
 			// TODO: Draw the cost
+
+			// Check if the resource has been researched
+			var _resource_has_been_researched = resource_has_been_researched(_d.resource_type.resource_type);
 			
+			// Draw the overlay for unresearched
+			draw_set_alpha(0.75);
+			if not _resource_has_been_researched {
+				draw_rectangle_color(
+					_button_x,
+					_button_y,
+					_button_x + _b_w,
+					_button_y + _b_h,
+					c_black,
+					c_black,
+					c_black,
+					c_black,
+					false
+				);
+			}
+			draw_set_alpha(1);
+
+
 			// Place an item on the mouse
 			if _mouse_on_button 
+				and _resource_has_been_researched
 				and mouse_check_button_pressed(mb_left)
 			{
 				place_item_on_mouse(_d.resource_obj);

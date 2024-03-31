@@ -86,5 +86,6 @@
     {"name":"spr_menu_resources_full","order":3,"path":"sprites/spr_menu_resources_full/spr_menu_resources_full.yy",},
     {"name":"spr_tile_set","order":5,"path":"sprites/spr_tile_set/spr_tile_set.yy",},
     {"name":"spr_medium_resource_construction","order":6,"path":"sprites/spr_medium_resource_construction/spr_medium_resource_construction.yy",},
+    {"name":"resource_management","order":6,"path":"scripts/resource_management/resource_management.yy",},
   ],
 }
